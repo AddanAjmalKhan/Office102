@@ -1,0 +1,86 @@
+/* Pricing  */
+/* #FF0022, #121212 */
+.pricing-tabs {
+  padding-inline: clamp(1rem, 5vw, 10rem);
+}
+.pricing-tabs ul.nav li {
+  flex: 1;
+}
+
+.pricing-tabs ul.nav::-webkit-scrollbar {
+  width: 6px;
+  height: 0em;
+  background: #fafafa;
+}
+
+.pricing-tabs li button {
+  width: 100%;
+  padding: 1rem;
+}
+
+.pricing-tabs .nav-pills {
+  --bs-nav-pills-link-active-bg: rgb(33, 37, 41);
+}
+
+.pricing-tabs li .nav-link:hover {
+  color: white;
+  background: rgb(33, 37, 41);
+}
+.list-items-content ul {
+  padding-left: clamp(1rem, 5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: clamp(1rem, 5vw, 2rem);
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: clamp(1rem, 5vw, 2rem);
+}
+.list-items-content ul li {
+  color: white;
+  font-weight: 400;
+  position: relative;
+}
+.list-items-content ul li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--primary);
+  position: absolute;
+  top: 10px;
+  left: -1rem;
+  border-radius: 50%;
+}
+
+.tab-content .btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-active-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+  padding: 0.5rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+.tab-content .btn-primary:hover {
+  letter-spacing: 0.5px;
+}
+.best-seller {
+  position: relative;
+}
+.best-seller::before {
+  content: "Best Seller";
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: -15px;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: var(--primary);
+  font-size: 16px;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 4px 10px;
+  text-align: center;
+}

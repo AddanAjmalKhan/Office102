@@ -1,0 +1,402 @@
+:root {
+  --bs-primary: #e74c0a;
+  --bs-primary-rgb: 231, 76, 10;
+}
+
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css');
+
+/* Preloader Icon Animation */
+html, body {
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+.loader-icon {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(0.9);
+  }
+}
+
+/* Arrow Interactivity */
+.hero2-shape img {
+  animation: floatUpDown 3s ease-in-out infinite;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+.hero2-shape img:hover {
+  transform: scale(1.1) rotate(5deg) translateY(-10px);
+  filter: brightness(1.2);
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Offcanvas Menu Styles */
+.offcanvas__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.offcanvas__menu li {
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+}
+.offcanvas__menu li:nth-child(1) { animation-delay: 0.1s; }
+.offcanvas__menu li:nth-child(2) { animation-delay: 0.2s; }
+.offcanvas__menu li:nth-child(3) { animation-delay: 0.3s; }
+.offcanvas__menu li:nth-child(4) { animation-delay: 0.4s; }
+.offcanvas__menu li:nth-child(5) { animation-delay: 0.5s; }
+.offcanvas__menu li:nth-child(6) { animation-delay: 0.6s; }
+.offcanvas__menu li:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.offcanvas__menu li a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+.offcanvas__menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4500;
+  transition: width 0.3s ease;
+}
+.offcanvas__menu li a:hover {
+  color: #ff4500;
+  transform: translateX(10px);
+}
+.offcanvas__menu li a:hover::after {
+  width: 100%;
+}
+
+/* Roll Marquee Animation */
+.roll__slider {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.roll__wrapper {
+  display: flex !important;
+  animation: rollMarquee 15s linear infinite;
+  width: max-content;
+}
+.roll__slide {
+  padding: 0 40px;
+  flex-shrink: 0;
+  width: auto !important;
+}
+.roll__slide h2 {
+  margin: 0;
+}
+
+@keyframes rollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Service Hover Image Change */
+.service__list-wrapper .row:has(.service__item[data-service="1"]:hover) .service__img-wrapper .service__img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+.service__list-wrapper .row:has(.service__item[data-service="1"]:hover) .service__img-wrapper .img-1 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1);
+}
+
+.service__list-wrapper .row:has(.service__item[data-service="2"]:hover) .service__img-wrapper .service__img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+.service__list-wrapper .row:has(.service__item[data-service="2"]:hover) .service__img-wrapper .img-2 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1);
+}
+
+.service__list-wrapper .row:has(.service__item[data-service="3"]:hover) .service__img-wrapper .service__img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+.service__list-wrapper .row:has(.service__item[data-service="3"]:hover) .service__img-wrapper .img-3 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1);
+}
+
+.service__list-wrapper .row:has(.service__item[data-service="4"]:hover) .service__img-wrapper .service__img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+.service__list-wrapper .row:has(.service__item[data-service="4"]:hover) .service__img-wrapper .img-4 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1);
+}
+
+.service__img {
+  transition: all 0.4s ease !important;
+}
+
+/* Arrow Hover Effect */
+i.fa-arrow-right, i.fa-solid {
+  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+a:hover i.fa-arrow-right,
+button:hover i.fa-arrow-right,
+.service__item:hover i.fa-arrow-right,
+.btn-item:hover i.fa-arrow-right {
+  color: #ff4500 !important;
+  transform: translateX(5px);
+}
+
+/* Workflow Section Styles */
+.workflow__slider .swiper-wrapper {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+/* Horizontal Line */
+.workflow__slider .swiper-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 47px; /* Align with dots */
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: #a3a3a3;
+  z-index: 1;
+}
+
+.workflow__slide {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Step Label */
+.workflow__step {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+/* Orange Dot */
+.workflow__slide::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #ff4500; /* Orange */
+  border-radius: 50%;
+  margin-bottom: 40px;
+  z-index: 3;
+}
+
+/* Big Faint Number */
+.workflow__number {
+  font-size: 100px;
+  font-weight: 800;
+  color: #f5f5f5;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  line-height: 1;
+}
+
+/* Title */
+.workflow__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Description */
+.workflow__slide p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .workflow__slider .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  .workflow__slide {
+    flex: 0 0 50%;
+    margin-bottom: 40px;
+  }
+  .workflow__slider .swiper-wrapper::before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .workflow__slide {
+    flex: 0 0 100%;
+  }
+}
+
+/* Dark Mode Support */
+.dark .workflow__title {
+  color: #fff;
+}
+.dark .workflow__slide p {
+  color: #ccc;
+}
+.dark .workflow__number {
+  color: rgba(255,255,255,0.05);
+}
+.dark .workflow__slider .swiper-wrapper::before {
+  background-color: #444;
+}
+
+/* Work Section Sticky Scrolling Effect */
+.custom-portfolio__area,
+.custom-portfolio__area .container,
+.custom-portfolio__area .row {
+  position: relative !important;
+  z-index: 1 !important;
+  overflow: visible !important;
+}
+
+/* The sticky "WORK" text */
+.custom-portfolio__text {
+  position: sticky !important;
+  top: 50vh !important; /* Stick to vertical center of viewport */
+  font-size: 25vw !important; /* Massive responsive text */
+  font-weight: 800 !important;
+  color: #f3f3f3 !important; /* Faint gray */
+  text-transform: uppercase !important;
+  text-align: center !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 0 !important; /* Don't push content down */
+  line-height: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transform: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+/* Make it look like outlined text for modern feel if desired, but solid faint is good */
+.dark .custom-portfolio__text {
+  color: #1a1a1a !important;
+}
+
+/* Portfolio grid layout */
+.custom-portfolio__list-1 {
+  position: relative !important;
+  z-index: 1 !important;
+  width: 100% !important; /* Fix for Bootstrap row flex container */
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  padding: 100px 0 !important; /* Space for scrolling */
+  row-gap: 40px !important;
+  column-gap: 2% !important;
+  transform: none !important;
+}
+
+.custom-portfolio__list-1 .portfolio__item {
+  width: 48% !important;
+  position: relative !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Staggered parallax-like effect */
+.custom-portfolio__list-1 .portfolio__item:nth-child(even) {
+  margin-top: 120px !important;
+}
+
+/* Images */
+.custom-portfolio__list-1 .portfolio__item img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1) !important;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+.custom-portfolio__list-1 .portfolio__item:hover img {
+  transform: scale(1.03) translateY(-10px) !important;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15) !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .custom-portfolio__text {
+    font-size: 30vw !important;
+  }
+  .custom-portfolio__list-1 .portfolio__item {
+    width: 100% !important;
+  }
+  .custom-portfolio__list-1 .portfolio__item:nth-child(even) {
+    margin-top: 0 !important;
+  }
+  .custom-portfolio__list-1 {
+    gap: 30px !important;
+  }
+}
+
