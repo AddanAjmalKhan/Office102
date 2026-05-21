@@ -1,4 +1,37 @@
 export default function contactus() { return (<>
+<style>{`
+  .custom-submit-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+  }
+  .custom-submit-btn {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .custom-submit-btn:hover {
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+  }
+  .custom-submit-btn i {
+    margin-left: 8px;
+    transform: rotate(-45deg);
+  }
+`}</style>
 {/* Contact area start */}
 <section className="contact__area-6 dark">
   <div className="container g-0 line pt-120 pb-110">
@@ -79,9 +112,12 @@ export default function contactus() { return (<>
             </div>
             <div className="row g-3">
               <div className="col-12">
-                <div className="btn_wrapper">
-                  <button type="submit" className="wc-btn-dark btn-hover btn-item"><span></span> Send <br />Messages <i
-                      className="fa-solid fa-arrow-right"></i></button>
+                <div className="custom-submit-btn-wrapper">
+                  <button type="submit" className="custom-submit-btn">
+                    <span>
+                      Send <br />Messages <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>

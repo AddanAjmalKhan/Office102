@@ -120,11 +120,17 @@ export default function ourportfolio() {
   }
   .portfolio__wrapper-6 {
     position: relative;
-    width: 100%;
+    width: 104%;
+    left: -2%;
     overflow: hidden;
     border-radius: 20px;
-    aspect-ratio: 16/9;
-    max-height: 70vh;
+    aspect-ratio: 16/10;
+    max-height: 75vh;
+    transition: all 0.4s ease;
+  }
+  .portfolio__wrapper-6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
   }
   .portfolio__list-6 {
     position: relative;
@@ -152,11 +158,59 @@ export default function ourportfolio() {
     object-fit: contain !important;
     border-radius: 20px !important;
     box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important;
+    transition: transform 0.5s ease !important;
   }
   @media (max-width: 991px) {
     .portfolio__wrapper-6 {
       height: 300px;
     }
+  }
+
+  /* Custom CTA Button Styles */
+  .custom-cta-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+  }
+  .custom-cta-btn {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .custom-cta-btn:hover {
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+  }
+  .custom-cta-btn i {
+    margin-left: 8px;
+    transform: rotate(-45deg);
+  }
+  .cta__sub-title-pill {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .cta__content {
+    text-align: center;
+    position: relative;
+    z-index: 5;
   }
 `}</style>
 
@@ -177,7 +231,7 @@ export default function ourportfolio() {
                     clients.
                   </p>
                 </div>
-                <div className="portfolio__pagination-6 mt-4">
+                <div className="portfolio__pagination-6" style={{ marginTop: "-30px" }}>
                   <span className="portfolio__current">01</span> / <span className="portfolio__total"></span>
                 </div>
               </div>
@@ -243,11 +297,14 @@ export default function ourportfolio() {
         <div className="row">
           <div className="col-xxl-12">
             <div className="cta__content">
-              <p className="cta__sub-title">Work with us</p>
-              <h2 className="cta__title title-anim">We would love to hear more about your project</h2>
-              <div className="btn_wrapper">
-                <a href="/contact-us" className="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk now <i
-                  className="fa-solid fa-arrow-right"></i></a>
+              <p className="cta__sub-title-pill">WORK WITH US</p>
+              <h2 className="cta__title title-anim" style={{ fontSize: "clamp(32px, 5vw, 60px)", fontWeight: "600", marginTop: "10px", lineHeight: "1.2", maxWidth: "800px", margin: "10px auto 0" }}>
+                We would love to hear <br/>more about your project
+              </h2>
+              <div className="custom-cta-wrapper">
+                <a href="/contact-us" className="custom-cta-btn">
+                  Let's Talk Now <i className="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>

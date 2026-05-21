@@ -118,24 +118,25 @@ export default function faqs() { return (<>
 {/* FAQ area end */}
 
 
-{/* CTA area start */}
-<section className="cta__area dark">
-  <div className="container line pb-110 dark-p">
-    <div className="line-3"></div>
-    <div className="row">
-      <div className="col-xxl-12">
-        <div className="cta__content">
-          <p className="cta__sub-title">Work with us</p>
-          <h2 className="cta__title">We would love to hear more about your project</h2>
-          <div className="btn_wrapper">
-            <a href="/contact-us" className="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk now <i
-                className="fa-solid fa-arrow-right"></i></a>
+    {/* CTA area start */}
+    <section className="cta__area dark">
+      <div className="container line pb-110 dark-p">
+        <div className="line-3"></div>
+        <div className="row">
+          <div className="col-xxl-12">
+            <div className="cta__content" style={{ textAlign: "center", position: "relative", zIndex: 5 }}>
+              <p className="cta__sub-title-pill" style={{ display: "inline-block", padding: "8px 24px", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", textTransform: "uppercase", fontSize: "13px", letterSpacing: "1px", marginBottom: "20px", color: "#fff" }}>WORK WITH US</p>
+              <h2 className="cta__title title-anim" style={{ fontSize: "clamp(32px, 5vw, 60px)", fontWeight: "600", marginTop: "10px", lineHeight: "1.2", maxWidth: "800px", margin: "10px auto 0" }}>We would love to hear <br/>more about your project</h2>
+              <div className="custom-cta-wrapper" style={{ display: "flex", justifyContent: "center", marginTop: "60px", position: "relative", zIndex: 10 }}>
+                <a href="/contact-us" className="custom-cta-btn" style={{ width: "220px", height: "220px", borderRadius: "50%", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", color: "#fff", fontSize: "16px", transition: "all 0.3s ease" }}>
+                  Let's Talk Now <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px", transform: "rotate(-45deg)" }}></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-{/* CTA area end */}
+    </section>
+    {/* CTA area end */}
 
 </>); }

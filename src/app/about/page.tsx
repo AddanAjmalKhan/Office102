@@ -1,5 +1,83 @@
-export default function about() { return (<>
+export default function about() { return (<div className="about-page-custom-style">
+<style dangerouslySetInnerHTML={{__html: `
+.about-page-custom-style .hero__about-info {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 60px !important;
+  gap: 30px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding-top: 40px !important;
+}
+.about-page-custom-style .hero__about-btn .wc-btn-primary {
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease !important;
+  padding: 0 !important;
+}
+.about-page-custom-style .hero__about-btn .wc-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  transform: scale(1.05) !important;
+}
+.about-page-custom-style .hero__about-text {
+  max-width: 500px !important;
+  margin: 0 !important;
+}
+.about-page-custom-style .hero__about-text p {
+  color: #a0a0a0 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  font-size: 16px !important;
+}
 
+.about-page-custom-style .sec-title-wrapper {
+  position: relative !important;
+}
+.about-page-custom-style .from-text {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  background-color: #ff4a17 !important;
+  color: #121212 !important;
+  padding: 15px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  z-index: 10 !important;
+}
+.about-page-custom-style .from-text span {
+  font-size: 32px !important;
+  line-height: 1 !important;
+  margin-top: 5px !important;
+}
+
+.about-page-custom-style .story__img-wrapper {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+}
+.about-page-custom-style .story__img-wrapper img {
+  border-radius: 8px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease, filter 0.4s ease !important;
+}
+.about-page-custom-style .story__img-wrapper:hover img {
+  transform: scale(1.03) !important;
+  filter: brightness(1.1) !important;
+}
+`}} />
 {/* Hero area start */}
 <section className="hero__about">
   <div className="container g-0 line">
@@ -86,9 +164,9 @@ export default function about() { return (<>
         </div>
       </div>
       <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-        <div className="story__img-wrapper">
-          <img src="assets/imgs/story/3.jpg" alt="Story Thumbnail" />
-          <img src="assets/imgs/story/4.jpg" alt="Story Thumbnail" />
+        <div className="story__img-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <img src="assets/imgs/story/3.jpg" alt="Story Thumbnail" style={{ width: '100%', borderRadius: '8px' }} />
+          <img src="assets/imgs/story/4.jpg" alt="Story Thumbnail" style={{ width: '100%', borderRadius: '8px' }} />
         </div>
       </div>
     </div>
@@ -237,4 +315,4 @@ export default function about() { return (<>
 </section>
 {/* CTA area end */}
 
-</>); }
+</div>); }
