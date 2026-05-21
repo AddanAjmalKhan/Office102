@@ -1,4 +1,56 @@
-export default function pricing() { return (<>
+'use client';
+import { useEffect } from 'react';
+import Link from 'next/link';
+
+export default function pricing() {
+  useEffect(() => {
+    // Link pricing CSS
+    if (!document.querySelector('link[href*="pricing.css"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/assets/css/pricing.css';
+      document.head.appendChild(link);
+    }
+
+    // Init all pricingSlider instances after tab shows
+    const initSliders = () => {
+      const sliders = document.querySelectorAll<HTMLElement>('.pricingSlider');
+      sliders.forEach((el) => {
+        if ((el as any)._swiperInstance) return; // already initialized
+        const sw = new (window as any).Swiper(el, {
+          slidesPerView: 3,
+          spaceBetween: 24,
+          grabCursor: true,
+          freeMode: true,
+          scrollbar: {
+            el: el.querySelector('.swiper-scrollbar'),
+            draggable: true,
+          },
+          breakpoints: {
+            0:   { slidesPerView: 1.1, spaceBetween: 16 },
+            576: { slidesPerView: 2,   spaceBetween: 20 },
+            992: { slidesPerView: 3,   spaceBetween: 24 },
+          },
+        });
+        (el as any)._swiperInstance = sw;
+      });
+    };
+
+    // Bootstrap tab events
+    const tabs = document.querySelectorAll('[data-bs-toggle="pill"]');
+    tabs.forEach((tab) => {
+      tab.addEventListener('shown.bs.tab', initSliders);
+    });
+
+    // Init visible slider on mount
+    const timer = setTimeout(initSliders, 300);
+    return () => {
+      clearTimeout(timer);
+      tabs.forEach((tab) => tab.removeEventListener('shown.bs.tab', initSliders));
+    };
+  }, []);
+
+  return (<>
 
 {/* Pricing hero area start */}
 <section className="career__top">
@@ -293,7 +345,7 @@ export default function pricing() { return (<>
 
 
             </div>
-
+            <div className="swiper-scrollbar"></div>
           </div>
 
         </div>
@@ -477,7 +529,7 @@ export default function pricing() { return (<>
 
 
             </div>
-
+            <div className="swiper-scrollbar"></div>
           </div>
         </div>
 
@@ -597,7 +649,7 @@ export default function pricing() { return (<>
 
 
             </div>
-
+            <div className="swiper-scrollbar"></div>
           </div>
         </div>
 
@@ -711,6 +763,7 @@ export default function pricing() { return (<>
                 </div>
               </div>
             </div>
+            <div className="swiper-scrollbar"></div>
           </div>
         </div>
 
@@ -873,6 +926,7 @@ export default function pricing() { return (<>
 
 
             </div>
+            <div className="swiper-scrollbar"></div>
           </div>
         </div>
 

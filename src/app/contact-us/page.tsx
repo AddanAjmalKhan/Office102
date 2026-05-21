@@ -6,7 +6,7 @@ export default function contactus() { return (<>
     <div className="row">
       <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
         <div className="sec-title-wrapper">
-          <h2 className="sec-title-2 animation__char_come">Let’s get in touch</h2>
+          <h2 className="sec-title-2">Let’s get in touch</h2>
         </div>
       </div>
       <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -19,7 +19,7 @@ export default function contactus() { return (<>
     <div className="row contact__btm">
       <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
         <div className="contact__info">
-          <h3 className="sub-title-anim-top animation__word_come">Don't be afraid man ! <br />say hello</h3>
+          <h3>Don't be afraid man ! <br />say hello</h3>
           <ul>
 
             <li><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a></li>

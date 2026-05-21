@@ -50,12 +50,14 @@ export default function Footer() { return (<>{/**/}
                         <div className="footer__widget-4">
                             <h2 className="project-title">Have a project in your mind?</h2>
                             <div className="btn_wrapper">
-                                <a href="/contact-us" className="wc-btn-primary btn-hover btn-item"><span></span>
+                                <a href="/contact-us" className="wc-btn-pink btn-hover btn-item"><span></span>
                                     contact us <i className="fa-solid fa-arrow-right"></i></a>
                             </div>
                             <h3 className="contact-time">09 : 00 AM - 10 : 30 PM</h3>
                             <h4 className="contact-day">Saturday - Thursday</h4>
                         </div>
+
+
 
                         <div className="footer__copyright">
                             <p>©2022 - 2025 | All Rights Reserved

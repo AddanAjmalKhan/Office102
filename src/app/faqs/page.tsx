@@ -1,13 +1,13 @@
 export default function faqs() { return (<>
 {/* FAQ area start */}
-<section className="faq__area-6">
+<section className="faq__area-6 dark">
   <div className="container g-0 line pt-130 pb-140">
     <div className="line-3"></div>
 
     <div className="row">
       <div className="col-xxl-12">
         <div className="sec-title-wrapper">
-          <h2 className="sec-title-2 animation__char_come">FAQ</h2>
+          <h2 className="sec-title-2">FAQ</h2>
           <p className="">Frequently asked question (FAQ) <br /> pages to find answers.</p>
         </div>
       </div>
@@ -119,14 +119,14 @@ export default function faqs() { return (<>
 
 
 {/* CTA area start */}
-<section className="cta__area">
+<section className="cta__area dark">
   <div className="container line pb-110 dark-p">
     <div className="line-3"></div>
     <div className="row">
       <div className="col-xxl-12">
         <div className="cta__content">
           <p className="cta__sub-title">Work with us</p>
-          <h2 className="cta__title title-anim">We would love to hear more about your project</h2>
+          <h2 className="cta__title">We would love to hear more about your project</h2>
           <div className="btn_wrapper">
             <a href="/contact-us" className="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk now <i
                 className="fa-solid fa-arrow-right"></i></a>

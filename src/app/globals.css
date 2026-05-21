@@ -399,3 +399,159 @@ button:hover i.fa-arrow-right,
   }
 }
 
+/* Footer Top Image - Right Alignment */
+.footer__top img {
+  display: block;
+  margin-left: auto;
+}
+
+/* Footer Widget-4 Contact Us Button - Visibility Fix */
+.footer__widget-4 .wc-btn-pink {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+/* Make the text and arrow icon inside the button white */
+.footer__widget-4 .wc-btn-pink,
+.footer__widget-4 .wc-btn-pink i,
+.footer__widget-4 .wc-btn-pink span {
+  color: #fff !important;
+}
+
+.footer__widget-4 .wc-btn-pink:hover {
+  color: #000 !important;
+  border-color: var(--primary) !important;
+}
+
+.footer__widget-4 .wc-btn-pink:hover i {
+  color: #000 !important;
+}
+
+/* Fix btn_wrapper negative margin inside footer (offsets it off-screen) */
+.footer__widget-4 .btn_wrapper {
+  margin: 0 auto 20px !important;
+  width: 170px;
+  height: 170px;
+}
+
+/* Ensure footer widget-4 renders above the overlapping footer__top image */
+.footer__widget-4 {
+  position: relative;
+  z-index: 10;
+}
+
+/* Footer inner must stack above the top image */
+.footer__inner {
+  position: relative;
+  z-index: 10 !important;
+}
+
+/* The footer top image should be below the footer content */
+.footer__top {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   Fix: Force visibility of GSAP-animated elements in dark sections
+   (FAQ & Contact Us pages - content hidden due to scroll triggers)
+   ============================================================ */
+
+/* Override SplitText autoAlpha (sets opacity:0 + visibility:hidden on chars/words) */
+.dark .animation__char_come div,
+.dark .animation__char_come span,
+.dark .animation__char_come .char,
+.dark .animation__char_come .word,
+.dark .animation__word_come div,
+.dark .animation__word_come span,
+.dark .animation__word_come .char,
+.dark .animation__word_come .word,
+.dark .sec-title-2,
+.dark .sec-title-2 *,
+.dark .sub-title-anim-top,
+.dark .sub-title-anim-top *,
+.dark .title-anim,
+.dark .title-anim *,
+.dark .text-anim,
+.dark .text-anim *,
+.dark .fade_bottom,
+.dark .fade_left {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+/* FAQ accordion content - white text in dark mode */
+.faq__area-6.dark,
+.faq__area-6.dark .accordion-item,
+.faq__area-6.dark .accordion-button,
+.faq__area-6.dark .accordion-body,
+.faq__area-6.dark .accordion-body p,
+.faq__area-6.dark .sec-title-wrapper p,
+.faq__area-6.dark .sec-title-wrapper h2,
+.faq__area-6.dark .faq__list-6 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff !important;
+}
+
+.faq__area-6.dark .accordion-button {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.faq__area-6.dark .accordion-button::after,
+.faq__area-6.dark .accordion-button::before {
+  color: #fff !important;
+}
+
+/* + icon (collapsed state) */
+.faq__area-6.dark .accordion-button.collapsed::after {
+  color: #fff !important;
+}
+
+/* - icon (expanded state) */
+.faq__area-6.dark .accordion-button:not(.collapsed)::after {
+  color: #fff !important;
+}
+
+.faq__area-6.dark .accordion-item {
+  background-color: transparent !important;
+  border-color: rgba(255,255,255,0.15) !important;
+}
+
+/* Contact page - white text in dark mode */
+.contact__area-6.dark,
+.contact__area-6.dark .contact__text p,
+.contact__area-6.dark .contact__info h3,
+.contact__area-6.dark .contact__info ul,
+.contact__area-6.dark .contact__info li,
+.contact__area-6.dark .contact__info a,
+.contact__area-6.dark .sec-title-wrapper,
+.contact__area-6.dark .sec-title-wrapper h2,
+.contact__area-6.dark .sec-title-wrapper p {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff !important;
+}
+
+/* CTA section - white text in dark mode */
+.cta__area.dark .cta__sub-title,
+.cta__area.dark .cta__title,
+.cta__area.dark .cta__content,
+.cta__area.dark .cta__content * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff !important;
+}

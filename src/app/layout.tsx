@@ -3,8 +3,9 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Offcanvas from "@/components/Offcanvas";
-import Footer from "@/components/Footer";
+
 import Modals from "@/components/Modals";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Home | Office 101 LLC",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/meanmenu.min.css" />
         <link rel="stylesheet" href="/assets/css/master.css" />
         <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/assets/css/pricing.css" />
       </head>
       <body suppressHydrationWarning>
         <div className="cursor1" suppressHydrationWarning></div>
@@ -53,6 +55,7 @@ export default function RootLayout({
             <div className="native-scroll-content" suppressHydrationWarning>
                 <main>{children}</main>
                 <Footer />
+
             </div>
         </div>
 
