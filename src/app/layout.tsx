@@ -28,6 +28,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/meanmenu.min.css" />
         <link rel="stylesheet" href="/assets/css/master.css" />
         <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/assets/css/pricing.css" />
       </head>
       <body suppressHydrationWarning>
         <div className="cursor1" suppressHydrationWarning></div>

@@ -1,5 +1,50 @@
-/* Pricing  */
-/* #FF0022, #121212 */
+/* Pricing */
+
+/* Force dark background to cover entire pricing section including cards */
+.career__top {
+  background-color: #121212 !important;
+  padding-bottom: 100px;
+}
+
+/* Make everything below the pricing cards (footer area) black */
+.footer__area,
+.footer__btm,
+.footer__top,
+.footer__inner,
+.native-scroll-wrapper,
+.native-scroll-content,
+body {
+  background-color: #121212 !important;
+}
+
+/* Footer text & links — keep white/light on black bg */
+.footer__widget p,
+.footer__widget-title,
+.footer__link li a,
+.footer__contact li,
+.footer__contact li a,
+.footer__copyright p,
+.project-title,
+.contact-time,
+.contact-day {
+  color: #ffffff !important;
+}
+
+.footer__link li a:hover,
+.footer__contact li a:hover {
+  color: #e74c0a !important;
+}
+
+/* Subscribe input on dark bg */
+.footer__subscribe form input {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+  color: #fff !important;
+}
+.footer__subscribe form input::placeholder {
+  color: rgba(255,255,255,0.45) !important;
+}
+
 .pricing-tabs {
   padding-inline: clamp(1rem, 5vw, 10rem);
 }
@@ -26,6 +71,52 @@
   color: white;
   background: rgb(33, 37, 41);
 }
+
+/* Pricing Slider - show 3 cards, mouse-drag to reveal 4th */
+.pricingSlider {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  padding-bottom: 20px;
+}
+
+.pricingSlider:active {
+  cursor: grabbing;
+}
+
+.pricingSlider .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.pricingSlider .swiper-slide {
+  /* 3 cards visible: (100% - 2 gaps) / 3 */
+  width: calc((100% - 48px) / 3);
+  flex-shrink: 0;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.pricingSlider .swiper-slide > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Scrollbar styling */
+.pricingSlider .swiper-scrollbar {
+  background: rgba(255,255,255,0.1);
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+.pricingSlider .swiper-scrollbar-drag {
+  background: var(--primary, #e74c0a);
+  border-radius: 2px;
+}
+
+/* List items */
 .list-items-content ul {
   padding-left: clamp(1rem, 5vw, 2.5rem);
   display: flex;
@@ -65,6 +156,8 @@
 .tab-content .btn-primary:hover {
   letter-spacing: 0.5px;
 }
+
+/* Best Seller badge */
 .best-seller {
   position: relative;
 }
@@ -83,4 +176,17 @@
   display: inline-block;
   padding: 4px 10px;
   text-align: center;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .pricingSlider .swiper-slide {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 575px) {
+  .pricingSlider .swiper-slide {
+    width: 85%;
+  }
 }
