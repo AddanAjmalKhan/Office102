@@ -1,4 +1,11 @@
-export default function Home() { return (<>
+"use client";
+import HomeWorkSection from "@/components/HomeWorkSection";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+export default function Home() { 
+  useScrollReveal();
+
+  return (<>
 <style>{`
   .hero__area-2 {
     position: relative;
@@ -358,38 +365,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="custom-portfolio__area pb-140">
-  <div className="container">
-    <div className="row top_row">
-
-      <h2 className="custom-portfolio__text">work</h2>
-      <div className="custom-portfolio__list-1">
-        <div className="portfolio__item">
-          <a href="assets/imgs/portfolio/6/7.webp" data-fancybox="portfolio"><img className="mover" src="assets/imgs/portfolio/6/7.webp" alt="Portfolio Image" /></a>
-        </div>
-        <div className="portfolio__item">
-          <a href="assets/imgs/portfolio/6/6.webp" data-fancybox="portfolio"><img src="assets/imgs/portfolio/6/6.webp" alt="Portfolio Image" /></a>
-        </div>
-        <div className="portfolio__item">
-          <a href="assets/imgs/portfolio/6/1.webp" data-fancybox="portfolio"><img src="assets/imgs/portfolio/6/1.webp" alt="Portfolio Image" /></a>
-        </div>
-        <div className="portfolio__item">
-          <a href="assets/imgs/portfolio/1/03.webp" data-fancybox="portfolio"><img src="assets/imgs/portfolio/1/03.webp" alt="Portfolio Image" /></a>
-        </div>
-
-      </div>
-    </div>
-
-    <div className="row row_bottom">
-      <div className="col-xxl-12">
-        <div className="portfolio__btn btn_wrapper" data-speed="1" data-lag="0.2">
-          <a className="wc-btn-secondary btn-hover btn-item" href="/our-portfolio"><span></span>View <br />all
-            projects <i className="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<HomeWorkSection />
 {/**/}
 
 

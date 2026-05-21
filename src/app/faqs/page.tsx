@@ -1,4 +1,9 @@
-export default function faqs() { return (<>
+'use client';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+
+export default function faqs() {
+  useScrollReveal();
+  return (<>
 {/* FAQ area start */}
 <section className="faq__area-6 dark">
   <div className="container g-0 line pt-130 pb-140">

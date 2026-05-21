@@ -299,7 +299,7 @@ export default function ourportfolio() {
             <div className="cta__content">
               <p className="cta__sub-title-pill">WORK WITH US</p>
               <h2 className="cta__title title-anim" style={{ fontSize: "clamp(32px, 5vw, 60px)", fontWeight: "600", marginTop: "10px", lineHeight: "1.2", maxWidth: "800px", margin: "10px auto 0" }}>
-                We would love to hear <br/>more about your project
+                We would love to hear <br />more about your project
               </h2>
               <div className="custom-cta-wrapper">
                 <a href="/contact-us" className="custom-cta-btn">

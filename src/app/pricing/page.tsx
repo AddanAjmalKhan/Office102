@@ -1,8 +1,10 @@
 'use client';
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export default function pricing() {
+  useScrollReveal();
   useEffect(() => {
     // Link pricing CSS
     if (!document.querySelector('link[href*="pricing.css"]')) {

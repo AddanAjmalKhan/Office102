@@ -1,4 +1,9 @@
-export default function contactus() { return (<>
+'use client';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+
+export default function contactus() {
+  useScrollReveal();
+  return (<>
 <style>{`
   .custom-submit-btn-wrapper {
     display: flex;

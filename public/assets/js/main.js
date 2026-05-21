@@ -306,36 +306,48 @@
     var modal_trigger = document.querySelector(".modal-trigger");
     var modal_close = document.querySelector("#modal_close");
 
-    modal_trigger.addEventListener("click", function () {
-      modal_testimonial.classList.add("modal-show");
-    });
-    modal_close.addEventListener("click", function () {
-      modal_testimonial.classList.remove("modal-show");
-    });
+    if (modal_trigger && modal_testimonial) {
+      modal_trigger.addEventListener("click", function () {
+        modal_testimonial.classList.add("modal-show");
+      });
+    }
+    if (modal_close && modal_testimonial) {
+      modal_close.addEventListener("click", function () {
+        modal_testimonial.classList.remove("modal-show");
+      });
+    }
 
     // Testimonial Modal 2
     var modal_testimonial_2 = document.querySelector("#modal_testimonial2");
     var modal_trigger_2 = document.querySelector(".modal-trigger-2");
     var modal_close_2 = document.querySelector("#modal_close2");
 
-    modal_trigger_2.addEventListener("click", function () {
-      modal_testimonial_2.classList.add("modal-show");
-    });
-    modal_close_2.addEventListener("click", function () {
-      modal_testimonial_2.classList.remove("modal-show");
-    });
+    if (modal_trigger_2 && modal_testimonial_2) {
+      modal_trigger_2.addEventListener("click", function () {
+        modal_testimonial_2.classList.add("modal-show");
+      });
+    }
+    if (modal_close_2 && modal_testimonial_2) {
+      modal_close_2.addEventListener("click", function () {
+        modal_testimonial_2.classList.remove("modal-show");
+      });
+    }
 
     // Testimonial Modal 3
     var modal_testimonial_3 = document.querySelector("#modal_testimonial3");
     var modal_trigger_3 = document.querySelector(".modal-trigger-3");
     var modal_close_3 = document.querySelector("#modal_close3");
 
-    modal_trigger_3.addEventListener("click", function () {
-      modal_testimonial_3.classList.add("modal-show");
-    });
-    modal_close_3.addEventListener("click", function () {
-      modal_testimonial_3.classList.remove("modal-show");
-    });
+    if (modal_trigger_3 && modal_testimonial_3) {
+      modal_trigger_3.addEventListener("click", function () {
+        modal_testimonial_3.classList.add("modal-show");
+      });
+    }
+    if (modal_close_3 && modal_testimonial_3) {
+      modal_close_3.addEventListener("click", function () {
+        modal_testimonial_3.classList.remove("modal-show");
+      });
+    }
   }
 
   var job_apply = document.querySelector(".job__apply");
@@ -346,12 +358,16 @@
     var apply_trigger = document.querySelector(".job__apply");
     var apply_close = document.querySelector("#apply_close");
 
-    apply_trigger.addEventListener("click", function () {
-      modal_application.classList.add("modal-show");
-    });
-    apply_close.addEventListener("click", function () {
-      modal_application.classList.remove("modal-show");
-    });
+    if (apply_trigger && modal_application) {
+      apply_trigger.addEventListener("click", function () {
+        modal_application.classList.add("modal-show");
+      });
+    }
+    if (apply_close && modal_application) {
+      apply_close.addEventListener("click", function () {
+        modal_application.classList.remove("modal-show");
+      });
+    }
 
     // application Modal 2
     var modal_application_2 = document.querySelector("#application_form2");
@@ -359,16 +375,22 @@
     var apply_close_2 = document.querySelector("#apply_close2");
     var back_form1 = document.querySelector("#back_form1");
 
-    apply_trigger_2.addEventListener("click", function () {
-      modal_application_2.classList.add("modal-show");
-    });
-    apply_close_2.addEventListener("click", function () {
-      modal_application_2.classList.remove("modal-show");
-      modal_application.classList.remove("modal-show");
-    });
-    back_form1.addEventListener("click", function () {
-      modal_application_2.classList.remove("modal-show");
-    });
+    if (apply_trigger_2 && modal_application_2) {
+      apply_trigger_2.addEventListener("click", function () {
+        modal_application_2.classList.add("modal-show");
+      });
+    }
+    if (apply_close_2 && modal_application_2 && modal_application) {
+      apply_close_2.addEventListener("click", function () {
+        modal_application_2.classList.remove("modal-show");
+        modal_application.classList.remove("modal-show");
+      });
+    }
+    if (back_form1 && modal_application_2) {
+      back_form1.addEventListener("click", function () {
+        modal_application_2.classList.remove("modal-show");
+      });
+    }
   }
   /////////////////////////////////////////////////////
 
@@ -919,6 +941,7 @@
     // 24. Portfolio 5 Animation 
     let skewSetter = gsap.quickTo(".portfolio__item-5 img", "skewY"),
       clamp = gsap.utils.clamp(-15, 15);
+    /*
     const smoother = ScrollSmoother.create({
       smooth: 1.35,
       effects: device_width < 1025 ? false : true,
@@ -928,6 +951,7 @@
       onUpdate: self => skewSetter(clamp(self.getVelocity() / -80)),
       onStop: () => skewSetter(0)
     });
+    */
 
     /////////////////////////////////////////////////////
 

@@ -542,3 +542,69 @@ button:hover i.fa-arrow-right,
   visibility: visible !important;
   color: #fff !important;
 }
+
+/* Ensure scroll reveal animations work properly on FAQ & Contact Us pages despite the general dark-mode visibility overrides */
+.faq__area-6.dark .global-anim-ready,
+.contact__area-6.dark .global-anim-ready,
+.cta__area.dark .global-anim-ready {
+  opacity: 0 !important;
+  transform: translateY(40px) !important;
+  visibility: visible !important;
+}
+.faq__area-6.dark .global-anim-ready.is-visible,
+.contact__area-6.dark .global-anim-ready.is-visible,
+.cta__area.dark .global-anim-ready.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Global Animations */
+.global-anim-ready {
+  opacity: 0 !important;
+  transform: translateY(40px) !important;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  visibility: visible !important;
+}
+.global-anim-ready.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Stagger delays for lists */
+.service__list .service__item.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.service__list .service__item.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.service__list .service__item.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.service__list .service__item.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
+.counter__wrapper .counter__item.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.counter__wrapper .counter__item.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.counter__wrapper .counter__item.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.counter__wrapper .counter__item.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
+.workflow__slider .workflow__slide.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.workflow__slider .workflow__slide.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.workflow__slider .workflow__slide.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.workflow__slider .workflow__slide.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
+.brand__list .brand__item.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.brand__list .brand__item.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.brand__list .brand__item.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.brand__list .brand__item.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+.brand__list .brand__item.global-anim-ready:nth-child(5) { transition-delay: 0.5s !important; }
+.brand__list .brand__item.global-anim-ready:nth-child(6) { transition-delay: 0.6s !important; }
+
+.pricing__card.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.pricing__card.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.pricing__card.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.pricing__card.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
+.faq__item.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.faq__item.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.faq__item.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.faq__item.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
+.accordion-item.global-anim-ready:nth-child(1) { transition-delay: 0.1s !important; }
+.accordion-item.global-anim-ready:nth-child(2) { transition-delay: 0.2s !important; }
+.accordion-item.global-anim-ready:nth-child(3) { transition-delay: 0.3s !important; }
+.accordion-item.global-anim-ready:nth-child(4) { transition-delay: 0.4s !important; }
+
