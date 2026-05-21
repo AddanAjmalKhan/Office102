@@ -36,12 +36,13 @@ export default function RootLayout({
         <div className="cursor" id="client_cursor" suppressHydrationWarning>Contact</div>
 
         <div className="preloader" suppressHydrationWarning>
-            <div className="loading">
-                <svg className="loader-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
-                    <circle cx="50" cy="50" r="40" stroke="#ffffff" strokeWidth="8" fill="none" strokeDasharray="160" strokeLinecap="round">
-                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1" />
-                    </circle>
-                </svg>
+            {/* Hidden — keeps bundle.js happy (it calls .loading.addEventListener) */}
+            <div className="loading" style={{ display: 'none' }}></div>
+            {/* Visible animated lines loader */}
+            <div className="lines-loader">
+                {[...Array(12)].map((_, i) => (
+                    <div key={i} className="loader-line" style={{ animationDelay: `${i * 0.08}s` }}></div>
+                ))}
             </div>
         </div>
 

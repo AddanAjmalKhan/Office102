@@ -410,7 +410,7 @@ export default function pricing() {
                 <div className="bg-dark rounded-3 p-3 py-4 p-md-4 py-md-5">
                   <div className=" text-center">
                     <span className=" d-block text-primary h2 mb-0 fw-bold">Best</span>
-                    <span className=" d-block text-primary h2 fw-bold">Selle</span>
+                    <span className=" d-block text-primary h2 fw-bold">Seller</span>
                     <h2 className=" text-white" style={{ fontSize: 'clamp(30px, 12vw, 50px)' }}>$825 <del><small
                           className=" fw-light opacity-75 text-white">$1244</small></del></h2>
                   </div>
@@ -466,11 +466,7 @@ export default function pricing() {
                       <li>Social Media Integration</li>
                       <li>Basic Contact / Query Form</li>
                       <li>CMS Panel</li>
-                      <li style={{ listStyle: 'none', display: 'inline' }}>
-                        <div>
-                          <br />
-                        </div>
-                      </li>
+
                     </ul>
                   </div>
                   <div className="text-center">
@@ -558,7 +554,6 @@ export default function pricing() {
                       <li>Mobile Responsive Layout</li>
                       <li>Social Media Integrations</li>
                       <li>1 Payment Mode Integration</li>
-
                     </ul>
                   </div>
                   <div className="text-center">
@@ -604,7 +599,7 @@ export default function pricing() {
                 <div className="bg-dark rounded-3 p-3 py-4 p-md-4 py-md-5">
                   <div className=" text-center">
                     <span className=" d-block text-primary h2 mb-0 fw-bold">E-Com</span>
-                    <span className=" d-block text-primary h2 fw-bold">Premiumr</span>
+                    <span className=" d-block text-primary h2 fw-bold">Premium</span>
                     <h2 className=" text-white" style={{ fontSize: 'clamp(30px, 12vw, 50px)' }}>$2499 <del><small
                           className=" fw-light opacity-75 text-white">$3998</small></del></h2>
                   </div>
@@ -631,7 +626,6 @@ export default function pricing() {
                       <li>Promo Code/Coupon Feature</li>
                       <li>Newsletter Subscription</li>
                       <li>Website Blog Section</li>
-
                     </ul>
                   </div>
                   <div className="text-center">
@@ -789,7 +783,6 @@ export default function pricing() {
                       <li>Storyboarding</li>
                       <li>Professional Voice Over</li>
                       <li>4 weeks TAT</li>
-                      <li>720p HD Quality</li>
                     </ul>
                   </div>
                   <div className="text-center">
@@ -815,10 +808,6 @@ export default function pricing() {
                       <li>Storyboarding</li>
                       <li>Professional Voice Over</li>
                       <li>4 weeks TAT</li>
-                      <li>720p HD Quality</li>
-                      <li>Detailed Illustration</li>
-                      <li>3 Revisions</li>
-                      <li>100% Ownership</li>
                     </ul>
                   </div>
                   <div className="text-center">
@@ -874,7 +863,6 @@ export default function pricing() {
                       <li>Storyboarding</li>
                       <li>Professional Voice Over</li>
                       <li>4 weeks deadline</li>
-                      <li>1080p HD Quality</li>
                       <li>Royalty free BG &amp; SFX</li>
                       <li>3 Revisions</li>
                       <li>100% Ownership</li>
@@ -907,9 +895,6 @@ export default function pricing() {
                       <li>2 Storyboarding Concepts</li>
                       <li>Professional Voice Over</li>
                       <li>4 weeks TAT</li>
-                      <li>1080p HD Quality</li>
-                      <li>Royalty free BG &amp; SFX</li>
-                      <li>5 Revisions</li>
                       <li>100% Ownership</li>
                       <li>Detailed Illustrations</li>
                       <li>24/7 Dedicated Project Manager</li>
