@@ -242,7 +242,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="counter__area">
+<section className="counter__area" style={{background: '#fff'}}>
   <div className="container g-0 line pt-150">
     <span className="line-3"></span>
 
@@ -278,7 +278,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="workflow__area">
+<section className="workflow__area" style={{background: '#fff'}}>
   <div className="container g-0 line pt-140 pb-140">
     <div className="line-3"></div>
     <div className="row">
@@ -369,7 +369,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="brand__area">
+<section className="brand__area" style={{background: '#fff'}}>
   <div className="container g-0 line pt-140 pb-130">
     <span className="line-3"></span>
     <div className="row">
@@ -410,7 +410,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="testimonial__area">
+<section className="testimonial__area" style={{background: '#fff'}}>
   <div className="container g-0 line">
     <span className="line-3"></span>
     <div className="row">
@@ -468,7 +468,7 @@ export default function Home() { return (<>
 
 
 {/**/}
-<section className="cta__area">
+<section className="cta__area" style={{background: '#fff'}}>
   <div className="container line pb-110">
     <div className="line-3"></div>
     <div className="row">
