@@ -76,7 +76,7 @@ export default function pricing() {
   <div className="career__thumb pricing-tabs pb-100">
     <div className="container">
       <ul className="nav nav-pills mb-3 justify-content-lg-center flex-nowrap text-nowrap overflow-hidden gap-2"
-        id="pills-tab" role="tablist" style={{ '--bs-nav-link-color': 'white', '--bs-nav-pills-link-active-bg': 'transparent', overflowX: 'auto !important' } as React.CSSProperties}>
+        id="pills-tab" role="tablist" style={{ '--bs-nav-link-color': 'white', '--bs-nav-pills-link-active-bg': 'transparent', overflowX: 'auto' } as React.CSSProperties}>
         <li className="nav-item" role="presentation">
           <button className="nav-link active" id="pills-logo-tab" data-bs-toggle="pill" data-bs-target="#pills-logo"
             type="button" role="tab" aria-controls="pills-logo" aria-selected="true">Logo Design</button>
