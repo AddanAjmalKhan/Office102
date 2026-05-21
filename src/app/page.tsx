@@ -1,6 +1,31 @@
 export default function Home() { return (<>
-{/**/}
+<style>{`
+  .hero__area-2 {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero__grid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, black 30%, transparent 100%);
+    mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, black 30%, transparent 100%);
+    animation: heroGridPulse 7s ease-in-out infinite;
+  }
+  @keyframes heroGridPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+`}</style>
+{/***/}
 <section className="hero__area-2">
+  {/* Grid background overlay */}
+  <div className="hero__grid-bg"></div>
   <div className="hero__inner-2">
     <div className="sec-title-wrapper">
       <h2 className="sec-title-3 bg-shape">We Design <br />Unique</h2>

@@ -97,6 +97,27 @@ export default function ourportfolio() {
 
   return (<>
     <style>{`
+  .portfolio__area-6 {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio__grid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+    animation: gridPulse 6s ease-in-out infinite;
+  }
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
   .portfolio__wrapper-6 {
     position: relative;
     width: 100%;
@@ -141,6 +162,8 @@ export default function ourportfolio() {
 
     {/* Portfolio area start */}
     <section className="portfolio__area-6">
+      {/* Grid background overlay */}
+      <div className="portfolio__grid-bg"></div>
       <div className="container line pt-100 pb-60">
         <span className="line-3"></span>
         <div className="zi-9">

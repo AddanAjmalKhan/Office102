@@ -204,17 +204,7 @@ button:hover i.fa-arrow-right,
   text-align: center;
   margin-top: 60px;
 }
-/* Horizontal Line */
-.workflow__slider .swiper-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 47px; /* Align with dots */
-  left: 10%;
-  right: 10%;
-  height: 1px;
-  background-color: #a3a3a3;
-  z-index: 1;
-}
+
 
 .workflow__slide {
   position: relative;
@@ -302,9 +292,6 @@ button:hover i.fa-arrow-right,
 }
 .dark .workflow__number {
   color: rgba(255,255,255,0.05);
-}
-.dark .workflow__slider .swiper-wrapper::before {
-  background-color: #444;
 }
 
 /* Work Section Sticky Scrolling Effect */
