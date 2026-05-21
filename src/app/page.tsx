@@ -324,7 +324,7 @@ export default function Home() {
       <div className="col-xxl-12">
         <div className="swiper workflow__slider ">
           <div className="swiper-wrapper">
-            <div className="swiper-slide workflow__slide fade_left">
+            <div className="swiper-slide workflow__slide global-anim-ready">
               <h4 className="workflow__step">step 01</h4>
               <h5 className="workflow__number">01</h5>
               <h6 className="workflow__title">Build A Design Brief</h6>
@@ -332,7 +332,7 @@ export default function Home() {
                 kick-start your project.</p>
             </div>
 
-            <div className="swiper-slide workflow__slide fade_left">
+            <div className="swiper-slide workflow__slide global-anim-ready">
               <h4 className="workflow__step">step 02</h4>
               <h5 className="workflow__number">02</h5>
               <h6 className="workflow__title">Receive your designs</h6>
@@ -340,7 +340,7 @@ export default function Home() {
                 concepts.</p>
             </div>
 
-            <div className="swiper-slide workflow__slide fade_left">
+            <div className="swiper-slide workflow__slide global-anim-ready">
               <h4 className="workflow__step">step 03</h4>
               <h5 className="workflow__number">03</h5>
               <h6 className="workflow__title">Give feedback</h6>
@@ -348,7 +348,7 @@ export default function Home() {
                 your design.</p>
             </div>
 
-            <div className="swiper-slide workflow__slide fade_left">
+            <div className="swiper-slide workflow__slide global-anim-ready">
               <h4 className="workflow__step">step 04</h4>
               <h5 className="workflow__number">04</h5>
               <h6 className="workflow__title">Pick your favorite</h6>
