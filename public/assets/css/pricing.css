@@ -1,4 +1,41 @@
+/* ========================================
+   PAGE LOADER — Animated Lines
+   ======================================== */
+
+@keyframes lineRise {
+  0%   { transform: scaleY(0.08); background: rgba(255,255,255,0.15); }
+  40%  { transform: scaleY(1);    background: #ffffff; }
+  60%  { transform: scaleY(1);    background: #e74c0a; }
+  100% { transform: scaleY(0.08); background: rgba(231,76,10,0.1); }
+}
+
+.lines-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 80px;
+}
+
+.loader-line {
+  width: 4px;
+  height: 100%;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.15);
+  transform-origin: bottom center;
+  transform: scaleY(0.08);
+  animation: lineRise 1.2s ease-in-out infinite;
+}
+
+/* Make every 3rd and 4th bar start orange to break monotony */
+.loader-line:nth-child(3n)   { animation-duration: 1.1s; }
+.loader-line:nth-child(4n+1) { animation-duration: 1.35s; }
+
 /* Pricing */
+
 
 /* Force dark background to cover entire pricing section including cards */
 .career__top {
@@ -67,9 +104,24 @@ body {
   --bs-nav-pills-link-active-bg: rgb(33, 37, 41);
 }
 
+/* Active tab — orange bottom border + brighter bg */
+.pricing-tabs .nav-pills .nav-link.active {
+  background: rgb(33, 37, 41) !important;
+  border-bottom: 3px solid var(--primary, #e74c0a) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.pricing-tabs li .nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease;
+}
+
 .pricing-tabs li .nav-link:hover {
   color: white;
   background: rgb(33, 37, 41);
+  border-bottom: 3px solid rgba(231, 76, 10, 0.4);
 }
 
 /* Pricing Slider - show 3 cards, mouse-drag to reveal 4th */
@@ -127,6 +179,25 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   margin-bottom: clamp(1rem, 5vw, 2rem);
+  scroll-behavior: smooth;
+
+  /* Custom scrollbar — thin white track + orange thumb */
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary, #e74c0a) rgba(255, 255, 255, 0.15);
+}
+
+/* Webkit (Chrome, Edge, Safari) */
+.list-items-content ul::-webkit-scrollbar {
+  width: 2px;
+}
+.list-items-content ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+.list-items-content ul::-webkit-scrollbar-thumb {
+  background: var(--primary, #e74c0a);
+  border-radius: 10px;
+  min-height: 30px;
 }
 .list-items-content ul li {
   color: white;
