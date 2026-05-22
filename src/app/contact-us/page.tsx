@@ -60,7 +60,7 @@ export default function contactus() {
           <h3>Don't be afraid man ! <br />say hello</h3>
           <ul>
 
-            <li><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a></li>
+            <li><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></li>
 
           </ul>
         </div>
@@ -95,13 +95,13 @@ export default function contactus() {
                   <input type="checkbox" name="tnc" className="me-2 mt-2 w-auto mb-0" required />
                   <label htmlFor="tnc" className="text-light">
                     By checking this box, you agree to receive text messages
-                    from Office 101 LLC regarding customer support, and
+                    from Office 102 LLC regarding customer support, and
                     project updates, ensuring timely assistance, efficient issue resolution,
                     and service notifications.
                     Messaging frequency may vary, and message and data rates may apply.
                     You can opt out anytime by texting STOP. You will receive no further
                     messages after you word STOP. For assistance, text HELP or email us at
-                    <a href="mailto:info@Office101LLC.com" style={{ color: '#e74c0a' }}>info@Office101LLC.com</a>.
+                    <a href="mailto:info@office102LLC.com" style={{ color: '#e74c0a' }}>info@office102LLC.com</a>.
                     Read our <a href="/privacy-policy" style={{ color: '#e74c0a' }}>Privacy Policy</a>
                     and <a href="/terms-and-conditions" style={{ color: '#e74c0a' }}>Terms of Service</a> for
                     more details. Personal information

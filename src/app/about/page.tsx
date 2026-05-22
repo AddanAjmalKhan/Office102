@@ -1,4 +1,11 @@
-export default function about() { return (<div className="about-page-custom-style">
+"use client";
+import { useState } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+export default function about() { 
+  const [testKey, setTestKey] = useState(0);
+  useScrollReveal(".hero-title, .hero__about-text, .hero__about-video, .story__text, .story__img-wrapper, .counter__item, .brand__item, .testimonial__inner-2, .cta__content");
+  return (<div className="about-page-custom-style">
 <style dangerouslySetInnerHTML={{__html: `
 .about-page-custom-style .hero__about-info {
   display: flex !important;
@@ -42,24 +49,11 @@ export default function about() { return (<div className="about-page-custom-styl
 .about-page-custom-style .sec-title-wrapper {
   position: relative !important;
 }
-.about-page-custom-style .from-text {
-  position: absolute !important;
-  right: 0 !important;
-  top: 0 !important;
-  background-color: #ff4a17 !important;
-  color: #121212 !important;
-  padding: 15px 30px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+.about-page-custom-style .from-text-simple {
+  color: #ff4a17 !important;
+  font-size: 20px !important;
   font-weight: 600 !important;
-  font-size: 16px !important;
-  z-index: 10 !important;
-}
-.about-page-custom-style .from-text span {
-  font-size: 32px !important;
-  line-height: 1 !important;
-  margin-top: 5px !important;
+  margin-top: 10px !important;
 }
 .about-page-custom-style .hero__about-award {
   flex-shrink: 0 !important;
@@ -86,6 +80,254 @@ export default function about() { return (<div className="about-page-custom-styl
   transform: scale(1.03) !important;
   filter: brightness(1.1) !important;
 }
+
+.about-page-custom-style .sec-sub-title,
+.about-page-custom-style .sec-title,
+.about-page-custom-style .story__text p {
+  color: #fff !important;
+}
+
+.about-page-custom-style .line-3 {
+  display: none !important;
+}
+.about-page-custom-style .line::before,
+.about-page-custom-style .line::after {
+  display: none !important;
+}
+
+
+
+/* Counter Area */
+.about-page-custom-style .counter__wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border: none !important;
+  padding: 0 !important;
+}
+.about-page-custom-style .counter__item {
+  width: 280px !important;
+  height: 280px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+  position: relative !important;
+}
+.about-page-custom-style .counter__border {
+  display: none !important;
+}
+.about-page-custom-style .counter__number {
+  font-size: 90px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  line-height: 1 !important;
+  margin-bottom: 10px !important;
+}
+.about-page-custom-style .counter__item p {
+  color: #a0a0a0 !important;
+  font-size: 16px !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  margin: 0 !important;
+}
+
+/* Testimonial Area */
+.about-page-custom-style .testimonial__area-2 {
+  background: #121212 !important;
+  padding: 100px 0 !important;
+}
+.about-page-custom-style .testimonial__title-2 {
+  font-size: 48px !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-style: italic !important;
+  margin-bottom: 20px !important;
+  line-height: 1.2 !important;
+}
+.about-page-custom-style .testimonial__text-2 {
+  color: #a0a0a0 !important;
+  font-size: 18px !important;
+  margin-bottom: 30px !important;
+  line-height: 1.6 !important;
+}
+.about-page-custom-style .testimonial__author {
+  color: #fff !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important;
+}
+.about-page-custom-style .testimonial__role {
+  color: #a0a0a0 !important;
+  font-size: 14px !important;
+}
+.about-page-custom-style .testimonial__inner-2 {
+  position: relative !important;
+  padding: 50px !important;
+  background: #181818 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+.about-page-custom-style .testimonial__slider-wrapper-2,
+.about-page-custom-style .testimonial__slider,
+.about-page-custom-style .testimonial__slide {
+  background: transparent !important;
+}
+.about-page-custom-style .testimonial__inner-2::before {
+  content: '“' !important;
+  display: block !important;
+  font-size: 120px !important;
+  color: #90ff00 !important;
+  font-family: serif !important;
+  line-height: 0.8 !important;
+  margin-bottom: 10px !important;
+  font-weight: 700 !important;
+}
+.about-page-custom-style .testimonial__pagination {
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  z-index: 10 !important;
+}
+.about-page-custom-style .testimonial__pagination .prev-button,
+.about-page-custom-style .testimonial__pagination .next-button {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  background: transparent !important;
+  transition: all 0.3s ease !important;
+}
+.about-page-custom-style .testimonial__pagination .prev-button:hover,
+.about-page-custom-style .testimonial__pagination .next-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* CTA Area */
+.about-page-custom-style .cta__content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.about-page-custom-style .cta__sub-title {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 8px 24px !important;
+  border-radius: 30px !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 30px !important;
+  color: #fff !important;
+}
+.about-page-custom-style .cta__title {
+  font-size: 60px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  line-height: 1.1 !important;
+  max-width: 800px !important;
+  margin: 0 auto 60px !important;
+}
+.about-page-custom-style .cta__btn {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff !important;
+  background: transparent !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+.about-page-custom-style .cta__btn:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  transform: scale(1.05) !important;
+}
+.about-page-custom-style .cta__content .wc-btn-primary {
+  color: #fff !important;
+}
+
+@keyframes testFadeIn {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.test-anim-wrapper {
+  animation: testFadeIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@media (max-width: 991px) {
+  .about-page-custom-style .hero__about-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 30px !important;
+  }
+  .about-page-custom-style .hero-title {
+    font-size: clamp(36px, 6vw, 60px) !important;
+  }
+  .about-page-custom-style .counter__wrapper {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 30px !important;
+  }
+  .about-page-custom-style .counter__item {
+    width: calc(50% - 15px) !important;
+    height: auto !important;
+    aspect-ratio: 1/1 !important;
+  }
+  .about-page-custom-style .counter__number {
+    font-size: 60px !important;
+  }
+  .about-page-custom-style .testimonial__inner-2 {
+    padding: 30px !important;
+  }
+  .about-page-custom-style .testimonial__inner-2::before {
+    font-size: 80px !important;
+    margin-bottom: 0 !important;
+  }
+  .about-page-custom-style .testimonial__title-2 {
+    font-size: 32px !important;
+  }
+  .about-page-custom-style .cta__title {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-page-custom-style .counter__item {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+  .about-page-custom-style .testimonial__inner-2 {
+    padding: 20px !important;
+  }
+  .about-page-custom-style .testimonial__title-2 {
+    font-size: 24px !important;
+  }
+  .about-page-custom-style .cta__title {
+    font-size: 32px !important;
+  }
+  .about-page-custom-style .cta__btn {
+    width: 140px !important;
+    height: 140px !important;
+    font-size: 14px !important;
+  }
+}
 `}} />
 {/* Hero area start */}
 <section className="hero__about">
@@ -106,7 +348,7 @@ export default function about() { return (<div className="about-page-custom-styl
               </div>
             </div>
             <div className="hero__about-text">
-              <p>From the moment we start your project to the moment it ends, Office 101 LLC strives
+              <p>From the moment we start your project to the moment it ends, Office 102 LLC strives
                 to go above and beyond your expectations. Our creative design experts have earned decades of
                 experience in delivering exceptional services to small, medium, and large scale businesses from
                 diverse industries.</p>
@@ -134,15 +376,14 @@ export default function about() { return (<div className="about-page-custom-styl
 
 {/* Story area start */}
 <section className="story__area">
-  <div className="container g-0 line pt-140">
+  <div className="container g-0 line pt-60">
     <span className="line-3"></span>
     <div className="sec-title-wrapper">
-      <div className="from-text">from <span>2023</span></div>
-
       <div className="row">
         <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
           <h2 className="sec-sub-title title-anim">Digital Studio</h2>
           <h3 className="sec-title title-anim">Our story</h3>
+          <p className="from-text-simple">From 2023</p>
         </div>
         <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
           <div className="story__text">
@@ -186,7 +427,7 @@ export default function about() { return (<div className="about-page-custom-styl
 
 {/* Counter area start */}
 <section className="counter__area">
-  <div className="container g-0 line pt-150">
+  <div className="container g-0 line pt-60">
     <span className="line-3"></span>
 
     <div className="row">
@@ -222,18 +463,18 @@ export default function about() { return (<div className="about-page-custom-styl
 
 {/* Brand area start */}
 <section className="brand__area">
-  <div className="container g-0 line pt-140 pb-140">
+  <div className="container g-0 line pt-60 pb-60">
     <span className="line-3"></span>
     <div className="row g-0">
       <div className="col-xxl-12">
-        <div className="sec-title-wrapper">
-          <h2 className="sec-sub-title title-anim">International Brands</h2>
-          <h3 className="sec-title title-anim">We are happy to work with global <br />
+        <div className="sec-title-wrapper" style={{ paddingLeft: '20px' }}>
+          <h2 className="sec-sub-title title-anim" style={{ color: '#fff' }}>International Brands</h2>
+          <h3 className="sec-title title-anim" style={{ color: '#fff' }}>We are happy to work with global <br />
             largest brands</h3>
         </div>
       </div>
 
-      <div className="brand__list">
+      <div className="brand__list custom-brand-grid">
         <div className="brand__item fade_bottom">
           <img src="assets/imgs/brand/bg/1.png" alt="Brand Logo" />
         </div>
@@ -260,41 +501,37 @@ export default function about() { return (<div className="about-page-custom-styl
 
 
 {/* Testimonial area start */}
-<section className="testimonial__area-2">
-  <div className="container g-0 line pb-140">
+<section className="testimonial__area-2" style={{ position: 'relative' }}>
+  <div className="container g-0 line pb-60">
     <span className="line-3"></span>
 
-    <div className="row g-0">
+    <div className="row g-0 align-items-center">
       <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
         <div className="testimonial__video">
-          {/* <video autoplay muted loop>
-                    <source src="assets/video/testimonial.mp4" type="video/mp4" />
-                  </video> */}
-          <img src="assets/imgs/testimonial/ceo.webp" alt="Testimonial Video" style={{ width: '100%' }} />
+          <img src="assets/imgs/testimonial/ceo.webp" alt="Testimonial Video" style={{ width: '100%', borderRadius: '8px' }} />
         </div>
       </div>
 
       <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-        <div className="testimonial__slider-wrapper-2">
+        <div className="testimonial__slider-wrapper-2" style={{ position: 'relative', paddingLeft: '60px' }}>
           <div className="swiper testimonial__slider">
             <div className="swiper-wrapper">
-
               <div className="swiper-slide testimonial__slide">
-                <div className="testimonial__inner-2">
+                <div key={testKey} className="testimonial__inner-2 test-anim-wrapper">
                   <h2 className="testimonial__title-2">No.1 Design Agency in the U.S</h2>
                   <p className="testimonial__text-2">Whether you want to create an impactful logo or looking to
-                    build a stunning website, Office 101 LLC can help you, like no one else. Get to
+                    build a stunning website, Office 102 LLC can help you, like no one else. Get to
                     know everything about us and let the no.1 design agency do the rest for you!</p>
                   <h3 className="testimonial__author">Muhammad Yahya</h3>
-                  <h4 className="testimonial__role"> CEO, Office 101 LLC</h4>
+                  <h4 className="testimonial__role">CEO, Office 102 LLC</h4>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="testimonial__pagination">
-            <div className="prev-button"><i className="fa-solid fa-arrow-right"></i></div>
-            <div className="next-button"><i className="fa-solid fa-arrow-left"></i></div>
+            <div className="next-button" onClick={() => setTestKey(prev => prev + 1)}><i className="fa-solid fa-arrow-right"></i></div>
+            <div className="prev-button" onClick={() => setTestKey(prev => prev + 1)}><i className="fa-solid fa-arrow-left"></i></div>
           </div>
         </div>
       </div>
@@ -305,8 +542,8 @@ export default function about() { return (<div className="about-page-custom-styl
 
 
 {/* CTA area start */}
-<section className="cta__area">
-  <div className="container line pb-110 dark-p">
+<section className="cta__area" style={{ padding: '100px 0' }}>
+  <div className="container line pb-60 dark-p">
     <div className="line-3"></div>
     <div className="row">
       <div className="col-xxl-12">
@@ -314,8 +551,10 @@ export default function about() { return (<div className="about-page-custom-styl
           <p className="cta__sub-title">Work with us</p>
           <h2 className="cta__title title-anim">We would love to hear more about your project</h2>
           <div className="btn_wrapper">
-            <a href="/contact-us" className="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk now <i
-                className="fa-solid fa-arrow-right"></i></a>
+            <a href="/contact" className="wc-btn-primary btn-hover btn-item">
+              <span></span> Let’s Talk <br /> Now
+              <i className="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>

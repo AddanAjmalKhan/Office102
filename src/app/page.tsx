@@ -224,7 +224,7 @@ export default function Home() {
                   <h4 className="service__title">Mobile <br />Applications</h4>
                 </div>
                 <div className="service__text">
-                  <p>At Office 101 LLC, We Design and Develop Mobile Applications that Deliver Great
+                  <p>At Office 102 LLC, We Design and Develop Mobile Applications that Deliver Great
                     Value To The End Users.</p>
                 </div>
                 <div className="service__link">

@@ -67,7 +67,7 @@ export default function pricing() {
         <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-3">
           <div className="btn_wrapper">
             <a href="/contact-us" className="wc-btn-secondary btn-hover btn-item"><span></span> Explore
-              <br />Office 101 LLC Now! <i className="fa-solid fa-arrow-right"></i></a>
+              <br />Office 102 LLC Now! <i className="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>

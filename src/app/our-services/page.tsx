@@ -164,14 +164,14 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Greater Engagement through Professional Web Design and
                         Development</h2>
-                      <p>At Office 101 LLC, we are dedicated to developing unforgettable user experiences
+                      <p>At Office 102 LLC, we are dedicated to developing unforgettable user experiences
                         by creating stunning website designs which allow our customers to engage their targeted
                         audiences very well. With a combination of contemporary innovative designs and years of
                         experience, we guarantee ‘one of a kind’ experience which not only reflects positively on
                         your business’ outlook but serves as a ‘game-changer’.</p>
                       <p>Since incepted, we feel extremely proud for putting out work which has been immensely
                         recognized by the industry and especially by our customers. With sheer and extensive
-                        knowledge of web design, Office 101 LLC strives to stand at the forefront by
+                        knowledge of web design, Office 102 LLC strives to stand at the forefront by
                         breaking barriers and redefining the benchmarks within the IT industry. We provide assurance
                         to our customers that the web designs provided within the final delivery will remain
                         cohesive on all electronic mediums.</p>
@@ -196,7 +196,7 @@ export default function ourservices() {
                         large scale enterprises, we have provided a number of companies with high-end B2B and B2C
                         portals tailored exactly to their needs.</p>
                       <p>Whether you want to create your e-commerce store or need a comprehensive and custom B2B or
-                        B2C portal for your business, Office 101 LLC has a team of highly qualified and
+                        B2C portal for your business, Office 102 LLC has a team of highly qualified and
                         experienced professionals who can easily cater to all your dynamic needs. Our e-commerce
                         services are backed by the latest industry trends and bring proven results.</p>
                       <div className="btn_wrapper">
@@ -241,7 +241,7 @@ export default function ourservices() {
 
                     <div>
                       <h2 className="service__title-6 title-anim">We Understand Creativity Better Than Anyone Else</h2>
-                      <p>Office 101 LLC can become your ultimate helping hand if you are striving to
+                      <p>Office 102 LLC can become your ultimate helping hand if you are striving to
                         survive in today's rapidly evolving world of digital ideas. Our professional graphics and
                         animation designers have several years of unrivaled experience in creating animated videos.
                         We offer a wide range of custom animation services that include 2D character animations, 3D
@@ -269,14 +269,14 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Innovative Mobile Apps That Outperform
                         Everywhere</h2>
-                      <p>Professional mobile app designers and developers at Office 101 LLC can deliver
+                      <p>Professional mobile app designers and developers at Office 102 LLC can deliver
                         you exceptional craftsmanship when it comes to providing iOS and Android mobile app design
                         and development services. First, they focus on developing a clear understanding of the
                         provided requirements which ensures that completely unique and custom work has been done on
                         your iOS and Android mobile app design and development project.</p>
                       <p>We have created some of today's top trending mobile applications that are used by millions
                         of mobile users across the world. Whether you are an entrepreneur, a medium-sized business,
-                        or even a large scale enterprise, Office 101 LLC can bring you the best team of
+                        or even a large scale enterprise, Office 102 LLC can bring you the best team of
                         mobile app designers and developers to cater to all your needs.</p>
                       <div className="btn_wrapper">
                         <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
@@ -293,14 +293,14 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Insightful Book Editing That Elevates Stories
                         Everywhere</h2>
-                      <p>Professional book editors at Office 101 LLC deliver exceptional craftsmanship when it comes to
+                      <p>Professional book editors at Office 102 LLC deliver exceptional craftsmanship when it comes to
                         providing comprehensive book editing and proofreading services. Our editors begin by developing a
                         clear understanding of your manuscript, genre, and goals, ensuring every edit is thoughtful,
                         precise, and fully aligned with your vision. This approach guarantees completely original,
                         customized editing for each book project.</p>
 
                       <p>We have refined and polished manuscripts that have gone on to engage readers worldwide. Whether you
-                        are a first-time author, an independent publisher, or a large publishing house, Office 101 LLC
+                        are a first-time author, an independent publisher, or a large publishing house, Office 102 LLC
                         brings you a dedicated team of expert book editors committed to elevating your writing to its
                         highest standard.</p>
 
@@ -319,7 +319,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Insightful Book Formatting That Enhances
                         Reading Experiences Everywhere</h2>
-                      <p>Professional book formatting specialists at Office 101 LLC deliver exceptional craftsmanship by
+                      <p>Professional book formatting specialists at Office 102 LLC deliver exceptional craftsmanship by
                         providing clean, precise, and reader-friendly book formatting services. Our team begins by
                         understanding your manuscript’s layout requirements, publishing platform, and design goals to ensure
                         flawless formatting for both print and digital editions. This approach guarantees fully customized,
@@ -327,7 +327,7 @@ export default function ourservices() {
 
                       <p>We have formatted manuscripts that are now enjoyed by readers across the globe in both eBook and
                         print formats. Whether you are a first-time author, a self-publisher, or an established publishing
-                        house, Office 101 LLC provides a dedicated team of book formatting experts committed to presenting
+                        house, Office 102 LLC provides a dedicated team of book formatting experts committed to presenting
                         your content with professional clarity and visual excellence.</p>
 
 
@@ -346,7 +346,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Stunning Book Cover Design That Elevates
                         Your Story Everywhere</h2>
-                      <p>Professional book cover designers at Office 101 LLC deliver exceptional craftsmanship by creating
+                      <p>Professional book cover designers at Office 102 LLC deliver exceptional craftsmanship by creating
                         visually striking and market-ready book covers. Our team begins by understanding your manuscript’s
                         genre, target audience, and design vision to ensure every cover is unique, compelling, and perfectly
                         aligned with your story. This approach guarantees fully customized, eye-catching designs for every
@@ -354,7 +354,7 @@ export default function ourservices() {
 
                       <p>We have designed book covers that have captivated readers worldwide, both in print and digital
                         formats. Whether you are a first-time author, a self-publisher, or an established publishing house,
-                        Office 101 LLC provides a dedicated team of expert cover designers committed to presenting your book
+                        Office 102 LLC provides a dedicated team of expert cover designers committed to presenting your book
                         with professional appeal and lasting impact.</p>
 
 
@@ -374,14 +374,14 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Complete Book Publishing That Launches
                         Stories Everywhere</h2>
-                      <p>Professional book publishing specialists at Office 101 LLC deliver exceptional craftsmanship by
+                      <p>Professional book publishing specialists at Office 102 LLC deliver exceptional craftsmanship by
                         guiding your manuscript through every step of the publishing process. Our team begins by
                         understanding your book’s genre, target audience, and publishing goals to ensure a smooth, fully
                         customized experience for both print and digital formats. This approach guarantees a professional,
                         market-ready publication for every project.</p>
 
                       <p>We have helped authors successfully publish books that reach readers worldwide. Whether you are a
-                        first-time author, a self-publisher, or an established publishing house, Office 101 LLC provides a
+                        first-time author, a self-publisher, or an established publishing house, Office 102 LLC provides a
                         dedicated team of publishing experts committed to bringing your story to life and delivering it to
                         readers with maximum impact.</p>
 
@@ -403,7 +403,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Professional Audiobook Services That Deliver
                         Stories Everywhere</h2>
-                      <p>Professional audiobook production specialists at Office 101 LLC deliver exceptional craftsmanship
+                      <p>Professional audiobook production specialists at Office 102 LLC deliver exceptional craftsmanship
                         by transforming your manuscript into a fully narrated, high-quality audiobook. Our team begins by
                         understanding your book’s genre, target audience, and narration goals to ensure a smooth, fully
                         customized production for both digital and streaming platforms. This approach guarantees a
@@ -411,7 +411,7 @@ export default function ourservices() {
 
                       <p>We have helped authors bring their stories to life for audiences worldwide through engaging and
                         immersive audiobook experiences. Whether you are a first-time author, a self-publisher, or an
-                        established publishing house, Office 101 LLC provides a dedicated team of audiobook production
+                        established publishing house, Office 102 LLC provides a dedicated team of audiobook production
                         experts committed to delivering your story with professional clarity, captivating narration, and
                         lasting impact.</p>
 
@@ -434,7 +434,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Engaging Book Illustrations That Captivate
                         Readers Everywhere</h2>
-                      <p>Professional book illustration specialists at Office 101 LLC deliver exceptional craftsmanship by
+                      <p>Professional book illustration specialists at Office 102 LLC deliver exceptional craftsmanship by
                         creating visually stunning and story-driven illustrations. Our team begins by understanding your
                         manuscript’s genre, target audience, and artistic vision to ensure a fully customized and cohesive
                         illustration style for every project. This approach guarantees unique, high-quality artwork that
@@ -442,7 +442,7 @@ export default function ourservices() {
 
                       <p>We have helped authors and publishers captivate readers worldwide through engaging and imaginative
                         illustrations. Whether you are a first-time author, a self-publisher, or an established publishing
-                        house, Office 101 LLC provides a dedicated team of illustration experts committed to presenting your
+                        house, Office 102 LLC provides a dedicated team of illustration experts committed to presenting your
                         story with professional artistry, visual appeal, and lasting impact.</p>
 
 
@@ -465,7 +465,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Strategic Book Marketing That Promotes
                         Your Story Everywhere</h2>
-                      <p>Professional book marketing specialists at Office 101 LLC deliver exceptional expertise by creating
+                      <p>Professional book marketing specialists at Office 102 LLC deliver exceptional expertise by creating
                         strategic and results-driven marketing campaigns. Our team begins by understanding your book’s
                         genre, target audience, and promotional goals to ensure a fully customized approach that maximizes
                         visibility and reader engagement. This strategy guarantees effective marketing that connects your
@@ -473,7 +473,7 @@ export default function ourservices() {
 
                       <p>We have helped authors and publishers successfully promote their books to readers worldwide through
                         targeted campaigns and creative promotional strategies. Whether you are a first-time author, a
-                        self-publisher, or an established publishing house, Office 101 LLC provides a dedicated team of
+                        self-publisher, or an established publishing house, Office 102 LLC provides a dedicated team of
                         marketing experts committed to elevating your book’s presence and driving lasting impact in the
                         literary market.</p>
                       <div className="btn_wrapper">
@@ -491,7 +491,7 @@ export default function ourservices() {
                     <div>
                       <h2 className="service__title-6 title-anim">Creative and Strategic Author Branding That Builds
                         Your Identity Everywhere</h2>
-                      <p>Professional author branding specialists at Office 101 LLC deliver exceptional expertise by
+                      <p>Professional author branding specialists at Office 102 LLC deliver exceptional expertise by
                         creating cohesive and impactful personal branding strategies. Our team begins by understanding your
                         author identity, target audience, and career goals to ensure a fully customized approach that
                         strengthens your presence and visibility in the literary world. This strategy guarantees a
@@ -499,7 +499,7 @@ export default function ourservices() {
 
                       <p>We have helped authors successfully build and maintain strong personal brands that connect with
                         audiences worldwide. Whether you are a first-time author, a self-publisher, or an established
-                        writer, Office 101 LLC provides a dedicated team of branding experts committed to elevating your
+                        writer, Office 102 LLC provides a dedicated team of branding experts committed to elevating your
                         profile, showcasing your unique voice, and driving lasting engagement with your readers.</p>
 
                       <div className="btn_wrapper">

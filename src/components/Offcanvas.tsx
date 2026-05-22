@@ -26,7 +26,7 @@ export default function Offcanvas() { return (<>{/**/}
                     <h3>Get in touch</h3>
                     <ul>
 
-                        <li><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a></li>
+                        <li><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></li>
 
                     </ul>
                 </div>

@@ -11,7 +11,7 @@ export default function termsandconditions() { return (<>
             design and concept remains the same. Revision Turnaround Time would be 48 hours.</p>
           <h4>Refund Policy / Money Back Guarantee</h4>
           <p>In any event, any deposited funds for a project shall not be subject to refund after delivery if
-            the initial design concepts are approved, or a change is requested unless Office 101 LLC cancels
+            the initial design concepts are approved, or a change is requested unless Office 102 LLC cancels
             or terminates your Contract for a reason other than your breach or non-performance.</p>
 
 
@@ -37,10 +37,10 @@ export default function termsandconditions() { return (<>
             once the website has been deployed live.</p>
           <p>For video animation packages no refund request will be entertained after the designing of the
             storyboard.</p>
-          <p>All refund requests should be communicated to the support department. Office 101 LLC, based on
+          <p>All refund requests should be communicated to the support department. Office 102 LLC, based on
             the violation of your user agreement reserves the right to approve/disapprove your request on an
             individual case to case basis.</p>
-          <p>For Office 101 LLC, refund will be applicable the same as it is on the single packages.</p>
+          <p>For Office 102 LLC, refund will be applicable the same as it is on the single packages.</p>
           <p>For example, if you order logo and web design service and approve the logo, you can claim refund
             for the website service at the time of initial design only.(Refund will be prorated based on the
             bundle discount).</p>
@@ -59,10 +59,10 @@ export default function termsandconditions() { return (<>
           </p>
           <p>Claim your refund specifying your concern by contacting us via any of the following three modes:
           </p>
-          <p><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a></p>
+          <p><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></p>
           <p>We will try to resolve your concern by virtue of our revision policy immediately or else will email
             you a refund request approval from our refund department. After the refund, your design rights would
-            be obtained by Office 101 LLC and you would not be able to display any version of the design sent
+            be obtained by Office 102 LLC and you would not be able to display any version of the design sent
             by company. Let us also specify that:</p>
           <p>Since the design rights would now be transferred to the company, you agree that you will have no
             right (direct or indirect) to use any response or other content, work product or media, nor will you
@@ -108,36 +108,36 @@ export default function termsandconditions() { return (<>
           <p>We offer 24-Hour Customer Support to address your queries and questions.</p>
           <p>You can contact us any time and we guarantee to respond immediately.</p>
           <h4>Communication Policy</h4>
-          <p>YOU agree that Office 101 LLC is not liable for any correspondence from email address (es) other
+          <p>YOU agree that Office 102 LLC is not liable for any correspondence from email address (es) other
             than the ones followed by our own domain i.e.</p>
-          <p><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a> or/and any number that is not
+          <p><a href="mailto:info@office102LLC.com">info@office102LLC.com</a> or/and any number that is not
             mentioned
-            on our website. Office 101 LLC should not be held responsible for any damage(s) caused by such
+            on our website. Office 102 LLC should not be held responsible for any damage(s) caused by such
             correspondence. We only take responsibility of any communication through email address (es) under
-            our own domain name or/and via number i.e. already mentioned on Office 101 LLC Website.</p>
+            our own domain name or/and via number i.e. already mentioned on Office 102 LLC Website.</p>
           <p>For assistance, text HELP or visit our website at <a
-              href="https://office101llc.com">https://office101llc.com</a>. <br />
-            Visit <a href="/privacy-policy">https://office101llc.com/privacy-policy</a>
+              href="https://office102llc.com">https://office102llc.com</a>. <br />
+            Visit <a href="/privacy-policy">https://office102llc.com/privacy-policy</a>
             for privacy policy and
-            <a href="/terms-and-conditions">https://office101llc.com/terms-and-conditions</a>
+            <a href="/terms-and-conditions">https://office102llc.com/terms-and-conditions</a>
             for Terms of Service.
 
           </p>
           <h4>Access to Information
           </h4>
-          <p>To access Office 101 LLC services you may be asked to provide certain registration details or
+          <p>To access Office 102 LLC services you may be asked to provide certain registration details or
             other information. By accepting these terms & conditions, you hereby acknowledge that all the
-            information provided by you will be correct, current, and complete. If Office 101 LLC believes
-            the information that you have provided is not correct, current, or complete, Office 101 LLC has
+            information provided by you will be correct, current, and complete. If Office 102 LLC believes
+            the information that you have provided is not correct, current, or complete, Office 102 LLC has
             the right to refuse your access to any services or any of its resources, and to terminate or suspend
             your account at any time.</p>
-          <p>Office 101 LLC is operating under a PCI DSS compliant company; therefore it is authorized to
+          <p>Office 102 LLC is operating under a PCI DSS compliant company; therefore it is authorized to
             keep your credit card information on file that can be used for any recurring service, additional
             development hours, server or network equipment required to develop or launch your website without
             any prior notification. However, our representatives always bring this in knowledge so that you are
             aware about all the processes.</p>
           <h4>100% Unique Design Guarantee</h4>
-          <p>At Office 101 LLC we guarantee that all of our customers' logos are made from scratch. This way
+          <p>At Office 102 LLC we guarantee that all of our customers' logos are made from scratch. This way
             you will have a logo that is tailor made for your requirements. We guarantee that your logo will be
             unique and impress your clientele</p>
           <h4>Exclusions</h4>
@@ -146,17 +146,17 @@ export default function termsandconditions() { return (<>
             standard. The Company will not have anything to do with any third party dealings during the
             development of this project. All additional work will require a separate fee agreement.</p>
           <h4>SMS/Text Opt-In</h4>
-          <p>By opting in to receive SMS/text messages from Office 101 LLC INC, you agree to the following:
+          <p>By opting in to receive SMS/text messages from Office 102 LLC INC, you agree to the following:
           </p>
-          <p>Office 101 LLC INC: You are subscribing to customer support, and project updates, ensuring
-            timely assistance, efficient issue resolution, and service notification from Office 101 LLC.
+          <p>Office 102 LLC INC: You are subscribing to customer support, and project updates, ensuring
+            timely assistance, efficient issue resolution, and service notification from Office 102 LLC.
           </p>
           <p>Message Frequency will vary.</p>
           <p>Product Description: Messages may include customer support, and project updates, ensuring timely
-            assistance, efficient issue resolution, and service notification from Office 101 LLC.
+            assistance, efficient issue resolution, and service notification from Office 102 LLC.
           </p>
           <p>Customer Care: For assistance, please contact us at <a
-              href="https://office101llc.com">https://office101llc.com</a>, or reply "HELP" to any
+              href="https://office102llc.com">https://office102llc.com</a>, or reply "HELP" to any
             message.
           </p>
           <p>Opt-Out: You may opt out at any time by replying "STOP" to any SMS. After opting out, you will no
@@ -164,7 +164,7 @@ export default function termsandconditions() { return (<>
           <p>Message and Data Rates: Standard message and data rates may apply, as determined by your mobile
             carrier.</p>
           <p>By subscribing, you confirm that you are the authorized user of the provided mobile phone number
-            and agree to receive SMS communications from Office 101 LLC.</p>
+            and agree to receive SMS communications from Office 102 LLC.</p>
 
 
 

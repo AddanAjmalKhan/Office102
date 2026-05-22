@@ -6,7 +6,7 @@ export default function privacypolicy() { return (<>
         <div>
           <h3 className="mb-4">About The Policy</h3>
 
-          <p>At Office 101 LLC, the privacy of our clients is our top priority on
+          <p>At Office 102 LLC, the privacy of our clients is our top priority on
             and we respect it as our own. Though we collect information from our clients, it is only used
             to make improvements in our customer services. Our company acknowledges that the maintenance and use
             of our clients' information is our responsibility. We DO NOT rent or sell the information that our clients
@@ -20,7 +20,7 @@ export default function privacypolicy() { return (<>
 
           <p></p>
           <h4>Personal Information Collected</h4>
-          <p>The information collected by Office 101 LLC includes the client's name, e-mail, mailing address and phone
+          <p>The information collected by Office 102 LLC includes the client's name, e-mail, mailing address and phone
             number.
             These are pieces of information that the client provides us while ordering or while saving the information
             with our
@@ -97,7 +97,7 @@ export default function privacypolicy() { return (<>
             we cannot guarantee its absolute security.</p>
           <p></p>
           <p>If you have any questions about security on our Web site, you can send email us at <a
-              href="mailto:info@Office101LLC.com">info@Office101LLC.com</a>.</p>
+              href="mailto:info@office102LLC.com">info@office102LLC.com</a>.</p>
           <p></p>
           <h4>Access of Registered Accounts</h4>
           <p>The client can access their registered accounts by signing in on our homepage. Once signed in, the client
@@ -193,14 +193,14 @@ export default function privacypolicy() { return (<>
           <h4>Assistance:</h4>
           <p></p>
           <p>For assistance, text HELP, call our toll free number
-            (856) 267-0076 or email us on <a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a> or visit
+            (856) 267-0076 or email us on <a href="mailto:info@office102LLC.com">info@office102LLC.com</a> or visit
             our website at
-            <a href="/index">https://office101llc.com</a>.
+            <a href="/index">https://office102llc.com</a>.
           </p>
           <p></p>
-          <p>Visit <a href="/privacy-policy">https://office101llc.com/privacy-policy</a>
+          <p>Visit <a href="/privacy-policy">https://office102llc.com/privacy-policy</a>
             for privacy policy and <a
-              href="/terms-and-conditions">https://office101llc.com/terms-and-conditions</a> for Terms of
+              href="/terms-and-conditions">https://office102llc.com/terms-and-conditions</a> for Terms of
             Service.</p>
 
 

@@ -52,6 +52,7 @@ html, body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 140px;
 }
 .offcanvas__menu li {
   margin-bottom: 25px;

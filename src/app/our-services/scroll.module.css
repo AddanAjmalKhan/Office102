@@ -136,3 +136,33 @@
 .solution__title {
   color: #fff !important;
 }
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 991px) {
+  .stickySection {
+    flex-direction: column !important;
+    min-height: auto !important;
+  }
+  .stickyImage {
+    width: 100% !important;
+    height: 40vh !important;
+    position: relative !important;
+    padding: 2rem !important;
+  }
+  .stickyImage img {
+    max-height: 100% !important;
+  }
+  .scrollContent {
+    width: 100% !important;
+    height: auto !important;
+    overflow-y: visible !important;
+    padding: 1.5rem !important;
+    background: transparent !important;
+  }
+  .scrollContent .service__title-6 {
+    font-size: 1.75rem !important;
+  }
+  .serviceItem {
+    margin-bottom: 2.5rem !important;
+  }
+}

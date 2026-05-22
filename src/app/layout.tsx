@@ -8,7 +8,7 @@ import Modals from "@/components/Modals";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Home | Office 101 LLC",
+  title: "Home | Office 102 LLC",
   description: "Axtra HTML5 Template",
 };
 

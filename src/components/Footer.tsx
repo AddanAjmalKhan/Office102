@@ -34,7 +34,7 @@ export default function Footer() { return (<>{/**/}
                         <div className="footer__widget-3">
                             <h2 className="footer__widget-title">Contact Us</h2>
                             <ul className="footer__contact">
-                                <li><a href="mailto:info@Office101LLC.com">info@Office101LLC.com</a></li>
+                                <li><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></li>
                             </ul>
                             <h2 className="footer__widget-title">Address</h2>
                             <ul className="footer__contact">
