@@ -3,7 +3,11 @@ export default function Offcanvas() { return (<>{/**/}
         <div className="offcanvas__body">
             <div className="offcanvas__left">
                 <div className="offcanvas__logo">
+<<<<<<< HEAD
                     <a href="/"><img src="assets/imgs/logo.webp" alt="Offcanvas Logo" /></a>
+=======
+                    <a href="/"><img src="assets/imgs/logo.png" alt="Offcanvas Logo" /></a>
+>>>>>>> bdc5ccd (Updated project from Office102)
                 </div>
             </div>
             <div className="offcanvas__mid">

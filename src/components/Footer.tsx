@@ -11,7 +11,11 @@ export default function Footer() { return (<>{/**/}
                 <div className="col-xxl-12">
                     <div className="footer__inner">
                         <div className="footer__widget">
+<<<<<<< HEAD
                             <img className="footer__logo" src="assets/imgs/logo.webp" alt="Footer Logo" />
+=======
+                            <img className="footer__logo" src="assets/imgs/logo.png" alt="Footer Logo" />
+>>>>>>> bdc5ccd (Updated project from Office102)
                             <p>When do they work well, and when do they on us and finally, when do we actually need how
                                 can we
                                 avoid
