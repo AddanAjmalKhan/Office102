@@ -61,6 +61,15 @@ export default function about() { return (<div className="about-page-custom-styl
   line-height: 1 !important;
   margin-top: 5px !important;
 }
+.about-page-custom-style .hero__about-award {
+  flex-shrink: 0 !important;
+}
+.about-page-custom-style .hero__about-award img {
+  width: 120px !important;
+  height: auto !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.85 !important;
+}
 
 .about-page-custom-style .story__img-wrapper {
   border-radius: 8px !important;
@@ -85,7 +94,7 @@ export default function about() { return (<div className="about-page-custom-styl
     <div className="row">
       <div className="col-xxl-12">
         <div className="hero__about-content">
-          <h1 className="hero-title animation__word_come">Our Tireless Efforts & Years of Experience Are All
+          <h1 className="hero-title" style={{ fontFamily: "serif", fontStyle: 'normal', fontWeight: 700, fontSize: 'clamp(48px, 7vw, 90px)', lineHeight: 1.1, color: '#fff', marginBottom: '30px', letterSpacing: '-1px' }}>Our Tireless Efforts & Years of Experience Are All
             Dedicated To Your Success</h1>
           <div className="hero__about-info">
             <div className="hero__about-btn">
@@ -96,7 +105,7 @@ export default function about() { return (<div className="about-page-custom-styl
                   <i className="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
-            <div className="hero__about-text title-anim">
+            <div className="hero__about-text">
               <p>From the moment we start your project to the moment it ends, Office 101 LLC strives
                 to go above and beyond your expectations. Our creative design experts have earned decades of
                 experience in delivering exceptional services to small, medium, and large scale businesses from
