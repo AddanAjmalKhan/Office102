@@ -13077,6 +13077,9 @@ img {
 /*----------------------------------------*/
 .brand__area {
   overflow: hidden;
+  background-color: transparent;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .brand__area .pb-100 {
@@ -13096,21 +13099,20 @@ img {
 }
 
 .brand__area .sec-title-wrapper {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .brand__list,
 .brand__list-3,
 .brand__list-2 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [6];
   grid-template-columns: repeat(6, 1fr);
-  background-color: var(--white);
-  border-bottom: 1px solid var(--white-3);
+  gap: 0;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(255,255,255,0.03) !important;
   position: relative;
   z-index: 1;
-  margin-left: 1px;
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -13173,10 +13175,11 @@ img {
 }
 
 .brand__item {
-  padding: 40px;
+  padding: 42px 40px;
   text-align: center;
-  border-top: 1px solid var(--white-3);
-  border-right: 1px solid var(--white-3);
+  border-top: 1px solid rgba(255,255,255,0.03) !important;
+  border-right: 1px solid rgba(255,255,255,0.03) !important;
+  background: transparent !important;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -13235,6 +13238,48 @@ img {
   padding-bottom: 65px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+/* Brand area specific title sizing to match design */
+.brand__area .sec-title {
+  font-size: 88px;
+  line-height: 1.02;
+  font-weight: 700;
+  max-width: 1100px;
+  color: #ffffff;
+}
+
+.brand__area .sec-sub-title {
+  color: #cfcfcf;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Force brand logos to display white and center them */
+.brand__item img,
+.brand__list .brand__item img {
+  /* Force white logos: convert dark pixels to white while keeping transparent background */
+  filter: invert(1) brightness(2) contrast(120%) grayscale(1) !important;
+  -webkit-filter: invert(1) brightness(2) contrast(120%) grayscale(1) !important;
+  opacity: 0.98 !important;
+  max-width: 140px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+}
+
+/* Ensure no white background boxes around logos */
+.brand__list .brand__item > * {
+  background: transparent !important;
+}
+
+@media (max-width: 1199px) {
+  .brand__item img { max-width: 120px; }
+}
+
+@media (max-width: 767px) {
+  .brand__item img { max-width: 100px; }
 }
 
 .brand-gap {

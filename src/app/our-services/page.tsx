@@ -1,3 +1,6 @@
+import StickyController from "../../components/StickyController";
+import styles from "./scroll.module.css";
+
 export default function ourservices() { return (<>
 {/* Hero area start */}
 <section className="solution__area">
@@ -12,7 +15,7 @@ export default function ourservices() { return (<>
     </div>
 
     <div className="solution__mid">
-      <h1 className="solution__title animation__char_come">Digital Solution</h1>
+      <h1 className={"solution__title animation__char_come " + styles.solution__title}>Digital Solution</h1>
       <p>We’re designing digital experiences that enrich human lives and it helps to grow your business
         globally trends.</p>
     </div>
@@ -51,6 +54,7 @@ export default function ourservices() { return (<>
 
 {/* Service area start */}
 <section className="service__area-6">
+  <StickyController />
   <div className="container">
     <div className="row inherit-row">
       <div className="col-xxl-12">
