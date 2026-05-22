@@ -2,11 +2,7 @@ export default function Header() { return (<>{/**/}
     <header className="header__area-2">
         <div className="header__inner-2">
             <div className="header__logo-2">
-<<<<<<< HEAD
-                <a href="/"><img src="assets/imgs/logo.webp" alt="Site Logo" /></a>
-=======
                 <a href="/"><img src="assets/imgs/logo.png" alt="Site Logo" /></a>
->>>>>>> bdc5ccd (Updated project from Office102)
             </div>
             <div className="header__nav-2">
                 <ul className="main-menu menu-anim">
