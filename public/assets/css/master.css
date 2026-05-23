@@ -27026,7 +27026,7 @@ footer .btn_wrapper {
   width: 100%;
   height: 100vh;
   background-color: var(--black-2);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99999;
