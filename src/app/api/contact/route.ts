@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL!;
+const RESEND_FROM = process.env.RESEND_FROM!;
 
 export async function POST(req: NextRequest) {
   const { name, email, phone, subject, message } = await req.json();
@@ -14,7 +15,7 @@ export async function POST(req: NextRequest) {
   try {
     // Send notification to Office 102
     await resend.emails.send({
-      from: 'Office 102 Contact Form <no-reply@office102llc.com>',
+      from: RESEND_FROM,
       to: CONTACT_EMAIL,
       subject: `New Contact: ${subject}`,
       html: `
@@ -30,7 +31,7 @@ export async function POST(req: NextRequest) {
 
     // Send auto-reply to the user
     await resend.emails.send({
-      from: 'Office 102 LLC <no-reply@office102llc.com>',
+      from: RESEND_FROM,
       to: email,
       subject: 'We received your message — Office 102 LLC',
       html: `
