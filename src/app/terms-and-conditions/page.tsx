@@ -59,7 +59,7 @@ export default function termsandconditions() { return (<>
           </p>
           <p>Claim your refund specifying your concern by contacting us via any of the following three modes:
           </p>
-          <p><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></p>
+          <p><a href="mailto:Info@office102llc.com">Info@office102llc.com</a></p>
           <p>We will try to resolve your concern by virtue of our revision policy immediately or else will email
             you a refund request approval from our refund department. After the refund, your design rights would
             be obtained by Office 102 LLC and you would not be able to display any version of the design sent
@@ -110,7 +110,7 @@ export default function termsandconditions() { return (<>
           <h4>Communication Policy</h4>
           <p>YOU agree that Office 102 LLC is not liable for any correspondence from email address (es) other
             than the ones followed by our own domain i.e.</p>
-          <p><a href="mailto:info@office102LLC.com">info@office102LLC.com</a> or/and any number that is not
+          <p><a href="mailto:Info@office102llc.com">Info@office102llc.com</a> or/and any number that is not
             mentioned
             on our website. Office 102 LLC should not be held responsible for any damage(s) caused by such
             correspondence. We only take responsibility of any communication through email address (es) under

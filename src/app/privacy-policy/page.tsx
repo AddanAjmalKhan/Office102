@@ -97,7 +97,7 @@ export default function privacypolicy() { return (<>
             we cannot guarantee its absolute security.</p>
           <p></p>
           <p>If you have any questions about security on our Web site, you can send email us at <a
-              href="mailto:info@office102LLC.com">info@office102LLC.com</a>.</p>
+              href="mailto:Info@office102llc.com">Info@office102llc.com</a>.</p>
           <p></p>
           <h4>Access of Registered Accounts</h4>
           <p>The client can access their registered accounts by signing in on our homepage. Once signed in, the client
@@ -192,8 +192,8 @@ export default function privacypolicy() { return (<>
           <p></p>
           <h4>Assistance:</h4>
           <p></p>
-          <p>For assistance, text HELP, call our toll free number
-            (856) 267-0076 or email us on <a href="mailto:info@office102LLC.com">info@office102LLC.com</a> or visit
+          <p>For assistance, text HELP, call us at
+            +1 (571) 516-6723 or email us on <a href="mailto:Info@office102llc.com">Info@office102llc.com</a> or visit
             our website at
             <a href="/index">https://office102llc.com</a>.
           </p>

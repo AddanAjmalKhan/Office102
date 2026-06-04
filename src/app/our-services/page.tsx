@@ -148,11 +148,6 @@ export default function ourservices() {
                       <p>We have helped them not just in redefining the way their brands appear but, in
                         accomplishing all their strategic branding goals and developing a strong brand identity to
                         reach out greater target audience.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
 
@@ -175,11 +170,6 @@ export default function ourservices() {
                         breaking barriers and redefining the benchmarks within the IT industry. We provide assurance
                         to our customers that the web designs provided within the final delivery will remain
                         cohesive on all electronic mediums.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
 
@@ -199,11 +189,6 @@ export default function ourservices() {
                         B2C portal for your business, Office 102 LLC has a team of highly qualified and
                         experienced professionals who can easily cater to all your dynamic needs. Our e-commerce
                         services are backed by the latest industry trends and bring proven results.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
 
@@ -226,11 +211,6 @@ export default function ourservices() {
                         looking to engage and indulge your target audience into your brand, Infocus Consultancy
                         Group is your ultimate solution. We will integrate the best practices and boost your online
                         reputation, like never before.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
 
@@ -252,12 +232,6 @@ export default function ourservices() {
                         samples, and ensure absolute fulfillment of your custom design needs, With us, you are sure
                         to captivate your target audience like never before. We will set your brand stand out from
                         your competitors.</p>
-
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
 
@@ -278,11 +252,6 @@ export default function ourservices() {
                         of mobile users across the world. Whether you are an entrepreneur, a medium-sized business,
                         or even a large scale enterprise, Office 102 LLC can bring you the best team of
                         mobile app designers and developers to cater to all your needs.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_7" data-secid="7">
@@ -303,12 +272,6 @@ export default function ourservices() {
                         are a first-time author, an independent publisher, or a large publishing house, Office 102 LLC
                         brings you a dedicated team of expert book editors committed to elevating your writing to its
                         highest standard.</p>
-
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_8" data-secid="8">
@@ -329,13 +292,6 @@ export default function ourservices() {
                         print formats. Whether you are a first-time author, a self-publisher, or an established publishing
                         house, Office 102 LLC provides a dedicated team of book formatting experts committed to presenting
                         your content with professional clarity and visual excellence.</p>
-
-
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_9" data-secid="9">
@@ -356,14 +312,6 @@ export default function ourservices() {
                         formats. Whether you are a first-time author, a self-publisher, or an established publishing house,
                         Office 102 LLC provides a dedicated team of expert cover designers committed to presenting your book
                         with professional appeal and lasting impact.</p>
-
-
-
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_10" data-secid="10">
@@ -384,15 +332,6 @@ export default function ourservices() {
                         first-time author, a self-publisher, or an established publishing house, Office 102 LLC provides a
                         dedicated team of publishing experts committed to bringing your story to life and delivering it to
                         readers with maximum impact.</p>
-
-
-
-
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_11" data-secid="11">
@@ -419,11 +358,6 @@ export default function ourservices() {
 
 
 
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_12" data-secid="12">
@@ -450,11 +384,6 @@ export default function ourservices() {
 
 
 
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_13" data-secid="13">
@@ -476,11 +405,6 @@ export default function ourservices() {
                         self-publisher, or an established publishing house, Office 102 LLC provides a dedicated team of
                         marketing experts committed to elevating your book’s presence and driving lasting impact in the
                         literary market.</p>
-                      <div className="btn_wrapper">
-                        <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
-                      </div>
                     </div>
                   </div>
                   <div className="service__item-6" id="service_14" data-secid="14">
@@ -504,8 +428,8 @@ export default function ourservices() {
 
                       <div className="btn_wrapper">
                         <a href="/contact-us" className="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                          free
-                          <br />qoutes <i className="fa-solid fa-arrow-right"></i></a>
+                          Free
+                          <br />Quote <i className="fa-solid fa-arrow-right"></i></a>
                       </div>
                     </div>
                   </div>

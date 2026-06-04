@@ -34,16 +34,15 @@ export default function Footer() { return (<>{/**/}
                         <div className="footer__widget-3">
                             <h2 className="footer__widget-title">Contact Us</h2>
                             <ul className="footer__contact">
-                                <li><a href="mailto:info@office102LLC.com">info@office102LLC.com</a></li>
+                                <li><a href="mailto:Info@office102llc.com">Info@office102llc.com</a></li>
                             </ul>
                             <h2 className="footer__widget-title">Address</h2>
                             <ul className="footer__contact">
-                                <li>1600 VILLAGE DR APT 1227 EULESS, TX 76039</li>
+                                <li>1600 VILLAGE DR APT 1227 EULESS, TX 76039-5677</li>
                             </ul>
                             <h2 className="footer__widget-title">Phone</h2>
                             <ul className="footer__contact">
-
-                                <li><a href="tel:+1(571)516-6723">+1(571)516-6723</a></li>
+                                <li><a href="tel:+15715166723">+1 (571) 516-6723</a></li>
                             </ul>
                         </div>
 
@@ -64,12 +63,6 @@ export default function Footer() { return (<>{/**/}
                             </p>
                         </div>
 
-                        <div className="footer__subscribe">
-                            <form action="mail.php" method="POST">
-                                <input type="email" name="email" placeholder="Enter your email" />
-                                <button type="submit" className="subs-btn"><i className="fa-solid fa-paper-plane"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
