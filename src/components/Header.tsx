@@ -1,5 +1,17 @@
-export default function Header() { return (<>{/**/}
-    <header className="header__area-2">
+'use client';
+import { useEffect, useState } from 'react';
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (<>{/**/}
+    <header className={`header__area-2${scrolled ? ' header--scrolled' : ''}`}>
         <div className="header__inner-2">
             <div className="header__logo-2">
                 <a href="/"><img src="assets/imgs/logo.png" alt="Site Logo" /></a>
@@ -11,7 +23,6 @@ export default function Header() { return (<>{/**/}
                     <li className="has-megamenu"><a href="/our-services">Our Services</a></li>
                     <li><a href="/our-portfolio">Our Portfolio</a></li>
                     <li><a href="/pricing">Pricing</a></li>
-
                     <li><a href="/faqs">FAQs</a></li>
                     <li><a href="/contact-us">Contact</a></li>
                 </ul>
@@ -22,4 +33,5 @@ export default function Header() { return (<>{/**/}
             </div>
         </div>
     </header>
-    {/**/}</>); }
+    {/**/}</>);
+}
