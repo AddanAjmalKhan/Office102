@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Home | Office 102 LLC",
   description: "Axtra HTML5 Template",
   icons: {
-    icon: "/assets/imgs/logo/favicon.png",
-    apple: "/assets/imgs/logo/favicon.png",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/assets/imgs/logo/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
