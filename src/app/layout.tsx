@@ -10,6 +10,10 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Home | Office 102 LLC",
   description: "Axtra HTML5 Template",
+  icons: {
+    icon: "/assets/imgs/logo/favicon.png",
+    apple: "/assets/imgs/logo/favicon.png",
+  },
 };
 
 export default function RootLayout({
