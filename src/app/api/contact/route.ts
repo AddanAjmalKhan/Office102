@@ -17,6 +17,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: RESEND_FROM,
       to: CONTACT_EMAIL,
+      replyTo: email,
       subject: `New Contact: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
