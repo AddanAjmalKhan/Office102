@@ -48,6 +48,20 @@ export async function POST(req: NextRequest) {
       `,
     });
 
+    /* ── Save lead to dashboard ── */
+    try {
+      await fetch(`${process.env.DASHBOARD_URL}/api/public/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-secret': process.env.CONTACT_API_SECRET ?? '',
+        },
+        body: JSON.stringify({ name, email, phone: phone ?? null, source: 'Office102' }),
+      });
+    } catch {
+      // Non-fatal — email already sent successfully
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Resend error:', error);
